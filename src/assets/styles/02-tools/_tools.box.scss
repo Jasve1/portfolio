@@ -1,0 +1,51 @@
+/*==================================================
+    02-TOOLS/BOX
+===================================================*/
+
+@mixin box {
+    border: 15px solid transparent;
+    border-image: url('../../images/fantasy_theme_border-icon.svg') 250 round;
+    background-color: $dark-bg-color;
+    color: $light-color;
+    -webkit-box-shadow: 6px 8px 12px -2px rgba(0,0,0,0.28);
+    -moz-box-shadow: 6px 8px 12px -2px rgba(0,0,0,0.28);
+    box-shadow: 6px 8px 12px -2px rgba(0,0,0,0.28);
+}
+
+@mixin header {
+    width: $width_elm-s;
+    margin-bottom: $spacing-h-s;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin: 0 $spacing-h-m;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        border-top: $general-border $theme-color;
+        border-bottom: $general-border $theme-color;
+        height: $padding-m;
+        width: $width_elm-m;
+        flex: none;
+    }
+}
+
+@mixin profile-header {
+    width: $height_elm-xl;
+    height: calc(#{$height_elm-xl} * 0.25);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_profile-header2.svg');
+    box-sizing: border-box;
+    text-align: center;
+    padding: $padding-xs;
+    padding-top: $padding-s;
+    color: $light-color;
+}

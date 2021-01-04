@@ -1,0 +1,64 @@
+/*==================================================
+    06-COMPONENTS/CONTACT
+===================================================*/
+
+.c-contact {
+    width: 100%;
+    padding: $padding-xl;
+    box-sizing: border-box;
+}
+
+.c-contact__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-contact__header-img {
+    @include header
+}
+
+.c-contact__content {
+    width: 100%;
+    height: calc(#{$width_box-l} * 1.16);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_contact-bg.svg');
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0 $padding-xl;
+}
+
+.c-contact__list-item {
+    width: 20%;
+    list-style: none;
+    transform: scale(1);
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: ease-in-out 0.2s;
+    }
+
+    &--instagram {
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    &--linkedin {
+        align-self: flex-end;
+        margin-right: 5%;
+    }
+
+    &--email {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    &--phone {
+        align-self: flex-end;
+        margin-right: 25%;
+    }
+}

@@ -1,0 +1,52 @@
+/*==================================================
+    06-COMPONENTS/INVENTORY-LIST
+===================================================*/
+
+.c-inventory-list {
+    padding: $padding-l;
+    background-color: $light-color;
+    border: $theme-color-second $thick-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.c-inventory-list__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: $padding-xs;
+    width: 70vw;
+    height: calc(70vw * 0.428);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_inventory-bg.svg');
+    box-sizing: border-box;
+}
+
+.c-inventory-list__item {
+    list-style: none;
+    margin: $padding-s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: $padding-m $padding-l;
+    width: $height_elm-l;
+    height: $height_elm-l;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_slots.svg');
+    box-sizing: border-box;
+
+    &:hover .c-infobox {
+        display: flex;
+    }
+}

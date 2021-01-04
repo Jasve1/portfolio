@@ -1,0 +1,163 @@
+/*==================================================
+    06-COMPONENTS/SKILLS
+===================================================*/
+
+.c-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 $padding-l;
+    width: $width_elm-xl;
+    height: calc(#{$width_elm-xl} * 1.79);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url('../../images/fantasy_theme_skills-bg.svg');
+    box-sizing: border-box;
+    flex: none;
+}
+
+.c-skills__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include profile-header;
+    margin-bottom: $padding-m;
+
+    h4 {
+        font-family: $h1-family;
+    }
+}
+
+.c-skills__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin path {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    height: $height_elm-l;
+    width: 7%;
+    top: 70%;
+    background-color: $theme-color-second;
+    border: $general-border $dark-color;
+    transform-origin: top center;
+    flex: none;
+}
+
+.c-skills__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-bottom: $padding-m;
+    width: 30%;
+
+    &--photoshop {
+        &::after {
+            @include path();
+            transform: rotate(-45deg);
+        }
+
+        &::before {
+            @include path();
+            transform: rotate(45deg);
+        }
+    }
+
+    &--illustrator {
+        align-self: flex-end;
+        margin-right: $padding-s;
+
+        &::after {
+            @include path();
+            transform: rotate(40deg);
+        }
+    }
+
+    &--indesign {
+        align-self: flex-start;
+        margin-bottom: $padding-xs;
+        margin-left: $padding-s;
+
+        .c-skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: calc(-100% - #{$padding-m});
+
+            &::before {
+                @include path();
+                transform: rotate(-40deg);
+            }
+        }
+    }
+
+    &--after-effects {
+        margin-bottom: $padding-xl;
+
+        &::before {
+            @include path();
+        }
+    }
+
+    &--html {
+        &::after {
+            @include path();
+        }
+    }
+
+    &--css {
+        &::after {
+            @include path();
+            transform: rotate(-60deg);
+        }
+
+        &::before {
+            @include path();
+        }
+    }
+
+    &--scss{
+        align-self: flex-end;
+        margin-bottom: 0;
+
+        .c-skill {
+            margin-top: calc(-30% - #{$padding-m});
+        }
+    }
+
+    &--js {
+        &::after {
+            @include path();
+            transform: rotate(-40deg);
+        }
+
+        &::before {
+            @include path();
+            transform: rotate(40deg);
+        }
+    }
+
+    &--react {
+        align-self: flex-start;
+        margin-bottom: 0;
+        margin-left: $padding-s;
+    }
+
+    &--vue {
+        align-self: flex-end;
+        margin-bottom: 0;
+        margin-right: $padding-s;
+
+        .c-skill {
+            margin-top: -100%;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/*==================================================
+    06-COMPONENTS/INVENTORY-ITEM
+===================================================*/
+
+.c-inventory-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.c-inventory-item__icon {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}

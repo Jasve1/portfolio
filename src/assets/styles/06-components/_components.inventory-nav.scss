@@ -1,0 +1,41 @@
+/*==================================================
+    06-COMPONENTS/INVENTORY-NAV
+===================================================*/
+
+.c-inventory-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-inventory-nav__list {
+    display: flex;
+
+    .c-inventory-nav__list-item:last-child {
+        margin-right: 0;
+    }
+}
+
+.c-inventory-nav__list-item {
+    background-color: $light-color;
+    margin-right: $padding-m;
+    list-style: none;
+    cursor: pointer;
+    padding: $padding-m;
+    color: $dark-color;
+    font-family: $h1-family;
+    font-size: $p-size;
+    transform-origin: bottom;
+    transform: scale(1);
+    transition: transform ease-in-out 0.2s;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    &--current {
+        border: $theme-color-second $thick-border;
+        border-bottom: none;
+        margin-bottom: -3px;
+        transform: scale(1.2);
+    }
+}

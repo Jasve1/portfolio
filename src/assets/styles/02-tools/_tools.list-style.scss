@@ -1,0 +1,16 @@
+/*==================================================
+    02-TOOLS/LIST-STYLE
+===================================================*/
+
+@mixin sword {
+    display: flex;
+    list-style: none;
+
+    &:before {
+        content: url('../../images/sword_bulletpoint.svg');
+        display: block;
+        width: $h2-size;
+        margin-right: $padding-xs;
+        flex: none;
+    }
+}

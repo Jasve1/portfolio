@@ -1,0 +1,32 @@
+/*==================================================
+    05-OBJECTS/WRAP
+===================================================*/
+
+.o-wrap {
+    margin: auto; 
+}
+
+.o-wrap__outer {
+    width: $width_box-xl;
+}
+
+.o-wrap__main {
+    width: $width_box-l;
+
+    .o-wrap__section:first-child {
+        margin-top: 0;
+        padding-top: $spacing-w-m;
+    }
+
+    .o-wrap__section:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.o-wrap__section {
+    width: 100%;
+    margin-top: $spacing-w-l;
+    margin-bottom: $spacing-w-l;
+    padding-top: $spacing-w-m;
+    padding-bottom: $spacing-w-m;
+}

@@ -1,0 +1,17 @@
+/*==================================================
+    06-COMPONENTS/BADGES
+===================================================*/
+
+.c-badges {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    top: $spacing-h-s;
+    right: $spacing-w-s;
+    z-index: 2;
+}
+
+.c-badges__item {
+    margin-left: $padding-m;
+    width: $height_elm-s;
+}

@@ -1,0 +1,99 @@
+/*==================================================
+    06-COMPONENTS/PROJECTS
+===================================================*/
+
+.c-project {
+    list-style: none;
+    margin-right: 3%;
+    width: 30%;
+}
+
+.c-project__button {
+    width: 100%;
+    height: calc((#{$width_box-l} * 0.3) * 1.22);
+    box-sizing: border-box;
+    padding: $padding-l $padding-xl $padding-xl $padding-xl;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_project.svg');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $light-color;
+    cursor: pointer;
+    transform: scale(1) rotate(0);
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+        transform: scale(1.2) rotate(10deg);
+        transition: ease-in-out 0.2s;
+    }
+
+    &--viewed {
+        position: relative;
+
+        &::before {
+            content: url('../../images/fantasy_theme_check.svg');
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width_elm-s;
+        }
+    }
+}
+
+.c-project-button__header {
+    margin-bottom: 50px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.c-project__content {
+    width: $width_box-xl;
+    height: calc(#{$width_box-xl} * 0.57);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_projects_bg.svg');
+    border-radius: 50px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    box-sizing: border-box;
+    display: flex;
+    padding: $spacing-h-l $spacing-w-m;
+}
+
+.c-project__page {
+    padding: $padding-xl;
+    padding-top: $padding-s;
+    width: 45%;
+    margin: 0 2.5%;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+
+.c-project__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.c-project__article {
+    margin-bottom: 20px;
+}
+
+.c-project__role-header {
+    margin-bottom: 20px;
+}
+
+.c-project__role-item {
+    @include sword;
+    margin-bottom: 10px;
+}

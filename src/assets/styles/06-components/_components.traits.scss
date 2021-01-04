@@ -1,0 +1,36 @@
+/*==================================================
+    06-COMPONENTS/TRAITS
+===================================================*/
+
+.c-traits {
+    width: 50%;
+    height: calc((#{$width_box-l} * 0.5) * 1.03);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_traits-bg.svg');
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    list-style: none;
+    padding: $padding-xl;
+    justify-content: center;
+
+    .c-traits__list-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-traits__list-item {
+    margin-bottom: $padding-s;
+}
+
+.c-traits__item-header {
+    margin-bottom: $padding-xs;
+    border-bottom: $thick-border $dark-color;
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}

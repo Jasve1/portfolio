@@ -1,0 +1,20 @@
+/*==================================================
+    04-ELEMENTS/GLOBAL-BG
+===================================================*/
+
+#root {
+    background-color: $bg-color;
+    background-image: url("../../images/pattern_fantasy_theme.svg");
+    background-size: 200px;
+    position: static;
+    width: calc(100vw - 5px);
+}
+
+button {
+    background: none;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}

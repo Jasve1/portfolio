@@ -1,0 +1,45 @@
+/*==================================================
+    06-COMPONENTS/HEADER
+===================================================*/
+
+.c-header{
+    position: fixed;
+    left: $spacing-w-s;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $height_elm-m;
+
+    .c-header__text:nth-child(2) {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            width: 1px;
+            border-radius: 50px;
+            height: $padding-s;
+            background-color: $theme-color;
+            display: block;
+            margin: $spacing-h-s 0;
+        }
+    }
+}
+
+.c-header__logo {
+    height: $height_elm-s;
+    width: 100%;
+    margin-top: $spacing-h-s;
+    margin-bottom:$spacing-h-l;
+    cursor: pointer;
+}
+
+.c-header__text {
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+    color: #385650;
+}

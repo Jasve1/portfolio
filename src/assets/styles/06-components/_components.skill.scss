@@ -1,0 +1,17 @@
+/*==================================================
+    06-COMPONENTS/SKILL
+===================================================*/
+
+.c-skill {
+    width: 100%;
+    position: relative;
+
+    &:hover .c-infobox {
+        display: flex;
+    }
+}
+
+.c-skill__icon {
+    position: relative;
+    z-index: 1;
+}

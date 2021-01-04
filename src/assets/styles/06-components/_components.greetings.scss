@@ -1,0 +1,67 @@
+/*==================================================
+    06-COMPONENTS/GREETINGS
+===================================================*/
+
+.c-greetings {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: $spacing-h-s;
+}
+
+$header-size: 25rem;
+.c-greetings__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $padding-s;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url('../../images/header_bg.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: $header-size;
+    height: calc(#{$header-size} * 0.24);
+}
+
+.c-greetings__header-name {
+    font-size: calc(#{$header-size} * 0.05);
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
+
+.c-greetings__header-title {
+    font-size: calc(#{$header-size} * 0.03);
+}
+
+.c-greetings__profile-pic {
+    margin-top: $spacing-h-s;
+    width: 30%;
+}
+
+$header-size: 13rem;
+
+.c-greetings__content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .c-greetings__content-item:first-child {
+        margin-right: calc(40% - #{$header-size});
+    }
+
+    .c-greetings__content-item:last-child {
+        margin-left: calc(40% - #{$header-size});
+    }
+}
+
+.c-greetings__content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

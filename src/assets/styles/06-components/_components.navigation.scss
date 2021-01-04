@@ -1,0 +1,42 @@
+/*==================================================
+    06-COMPONENTS/NAVIGATION
+===================================================*/
+
+.c-navigation {
+    position: fixed;
+    right: $spacing-w-s;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    min-width: $height_elm-s;
+    z-index: 1;
+}
+
+.c-navigation__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+    .c-navigation__list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .c-navigation__list-item:nth-child(1), 
+    .c-navigation__list-item:nth-child(2) {
+        margin-bottom: $spacing-h-m;
+    }
+}
+
+.c-navigation__list-item {
+    list-style: none;
+    align-self: flex-end;
+}
+
+.c-navigation__badges {
+    position: relative;
+}

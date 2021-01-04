@@ -1,0 +1,32 @@
+/*==================================================
+    06-COMPONENTS/BACKSTORY
+===================================================*/
+
+.c-backstory {
+    width: 100%;
+    height: calc(#{$width_box-l} * 0.78);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_backstory-bg.svg');
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 $padding-xl;
+}
+
+.c-backstory__header {
+    @include profile-header;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.c-backstory__content {
+    padding: $padding-l $padding-xl;
+    text-align: justify;
+
+    p {
+        margin: 1% 0;
+    }
+}

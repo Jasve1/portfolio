@@ -1,0 +1,35 @@
+/*==================================================
+    04-ELEMENTS/FONTS 
+===================================================*/
+
+body {
+    font-size: $global-size;
+    color: $dark-color;
+}
+
+h1 {
+    font-family: $h1-family;
+    font-size: $h1-size;
+    margin-bottom: $padding-m;
+}
+
+h2 {
+    font-family: $h2-family;
+    font-size: $h2-size;
+}
+
+h3 {
+    font-family: $h3-family;
+    font-size: $h3-size;
+}
+
+h4 {
+    font-family: $h4-family;
+    font-size: $h4-size;
+}
+
+p {
+    font-family: $p-family;
+    font-size: $p-size;
+    line-height: $line-height;
+}

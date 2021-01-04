@@ -1,0 +1,55 @@
+/*==================================================
+    05-OBJECTS/MODAL
+===================================================*/
+
+.o-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    z-index: 10;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+.o-modal__exit{
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color-opacity;
+    box-shadow: $inset-shadow;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: url("../../images/fantasy_theme_exit.svg");
+        display: block;
+        align-self: flex-end;
+        color: $dark-color;
+        width: $width_elm-s;
+        height: $width_elm-s;
+        margin-right: $spacing-h-m;
+        margin-top: $spacing-h-m;
+    }
+}
+
+.o-modal__content {
+    position: relative;
+}

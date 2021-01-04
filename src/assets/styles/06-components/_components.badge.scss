@@ -1,0 +1,59 @@
+/*==================================================
+    06-COMPONENTS/BADGE
+===================================================*/
+
+.c-badge {
+    position: relative;
+    width: 100%;
+
+    &--achieved {
+        &:hover .c-infobox {
+            display: flex;
+        }
+
+        .c-badge__icon {
+            transform: scale(1);
+            animation-name: achieved;
+            animation-duration: 0.5s;
+
+            &:before {
+                transform: scale(1);
+                opacity: 0;
+                transition: ease-out 0.3s;
+            }
+        }
+    }
+}
+
+.c-badge__icon-slot {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-badge__icon {
+    position: absolute;
+    top:0;
+    transform-origin: center;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+        content: '';
+        display: block;
+        border-radius: 50px;
+        width: $width_elm-s;
+        height: $width_elm-s;
+        background-color: $theme-color;
+        position: absolute;
+        transform-origin: center;
+        transform: scale(0);
+        opacity: 1;
+        transition: ease-out 0.3s;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,17 @@
+/*==================================================
+    02-TOOLS/ANIMATIONS
+===================================================*/
+
+@keyframes achieved {
+    0% {
+        transform: scale(0) rotate(0deg);
+    }
+
+    80% {
+        transform: scale(2) rotate(-30deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}

@@ -1,0 +1,30 @@
+/*==================================================
+    06-COMPONENTS/ABILITIES
+===================================================*/
+
+.c-abilities {
+    width: 45%;
+    height: calc((#{$width_box-l} * 0.45) * 1.11);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_ability-bg.svg');
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-abilities__header {
+    @include profile-header;
+}
+
+.c-abilities__list {
+    padding: $padding-xl;
+    box-sizing: border-box;
+}
+
+.c-abilities__list-item {
+    @include sword;
+    margin-bottom: $padding-s;
+}

@@ -1,0 +1,99 @@
+/*==================================================
+    06-COMPONENTS/NAV-BUTTON
+===================================================*/
+$nav-btn-icon-size: 3rem;
+$nav-btn-text-width: 4rem;
+
+.c-nav-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    position: relative;
+    background: none; //$bg-color
+    border: none; //$general-border $theme-color
+    padding: $padding-s 0;
+    height: $nav-btn-icon-size;
+    min-width: $nav-btn-icon-size;
+    border-radius: 50px;
+
+    &::before,
+    &::after {
+        content: '';
+        height: $padding-xs;
+        width: $padding-s;
+        border-top:$general-border $theme-color;
+        border-bottom:$general-border $theme-color;
+        display: block;
+        position: absolute;
+        transition: ease-in-out 0.2s;
+    }
+
+    &::before {
+        top: -$padding-xs;
+    }
+
+    &::after {
+        bottom: -$padding-xs;
+    }
+
+    &:focus {
+        outline: none;
+    }
+    
+    &:hover .c-nav-btn__text {
+        opacity: 1;
+        transform: scaleX(1);
+        margin-right: calc(#{$padding-s} + #{$nav-btn-icon-size});
+        width: $nav-btn-text-width;
+        transition: ease-in-out 0.2s;
+    }
+    
+    &:hover {
+        &::before,
+        &::after {
+            transform: translateX(-$padding-m);
+            transition: ease-in-out 0.2s;
+        }
+    }
+
+}
+
+.c-nav-btn--active {
+    .c-nav-btn__text {
+        opacity: 1;
+        transform: scaleX(1);
+        margin-right: calc(#{$padding-s} + #{$nav-btn-icon-size});
+        width: $nav-btn-text-width;
+        transition: ease-in-out 0.2s;
+    }
+    
+    &::before,
+    &::after {
+        transform: translateX(-$padding-m);
+        transition: ease-in-out 0.2s;
+    }
+}
+
+.c-nav-btn__img {
+    width: $nav-btn-icon-size;
+    height: $nav-btn-icon-size;
+    top: $padding-s;
+    z-index: 1;
+}
+
+.c-nav-btn__text {
+    text-align: right;
+    margin-right: 0;
+    width: 0;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: ease-in-out 0.2s;
+    color: $theme-color;
+    font-size: $btn-font-size;
+    font-family: $btn-font-family;
+    position: absolute;
+    right: 0;
+}

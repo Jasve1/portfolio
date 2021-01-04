@@ -1,0 +1,24 @@
+/*==================================================
+    06-COMPONENTS/CONTACT-TYPE
+===================================================*/
+
+.c-contact-type {
+    position: relative;
+
+    &:hover {
+        .c-contact-type__msg {
+            transform:scale(1) translate(0, -50px);
+        }
+    }
+}
+
+.c-contact-type__msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $h2-family;
+    color: $dark-color;
+    white-space: nowrap;
+    transform:scale(0) translate(0, 0);
+    transition: ease-in-out 0.2s;
+}

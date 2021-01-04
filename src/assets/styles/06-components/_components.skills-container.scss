@@ -1,0 +1,22 @@
+/*==================================================
+    06-COMPONENTS/SKILLS-CONTAINER
+===================================================*/
+
+.c-skills-container__content {
+    display: flex;
+    width: 75vw;
+    box-sizing: border-box;
+    padding: $padding-l;
+    background-color: $light-color;
+    border: $theme-color-second $thick-border;
+    align-items: center;
+    justify-content: center;
+
+    .c-skills:first-child {
+        margin-right: 10%;
+    }
+
+    .c-skills:last-child {
+        margin-left: 10%;
+    }
+}

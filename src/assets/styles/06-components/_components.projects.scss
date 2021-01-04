@@ -1,0 +1,33 @@
+/*==================================================
+    06-COMPONENTS/PROJECTS
+===================================================*/
+
+.c-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-projects__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-projects__header-img {
+    @include header
+}
+
+.c-projects__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .c-projects__list-item:last-child {
+        margin-right: 0;
+    }
+}
