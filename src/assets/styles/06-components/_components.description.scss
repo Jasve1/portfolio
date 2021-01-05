@@ -35,36 +35,26 @@
     list-style: none;
     width: 100%;
     flex-wrap: wrap;
-
-    .c-description__list-item:first-child {
-        margin-right: 5%;
-        margin-bottom: 5%;
-    }
-
-    .c-description__list-item:nth-child(2) {
-        margin-bottom: 5%;
-    }
-
-    .c-description__list-item:last-child {
-        margin-left: 5%;
-    }
+    justify-content: center;
 }
 
 .c-description__list-item {
-    width: 47.5%;
+    width: $width_box-s;
     display: flex;
     align-items: center;
-    height: calc(47.5% * 0.31);
+    height: calc(#{$width_box-s} * 0.31);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
     background-image: url('../../images/fantasy_theme_dscrp-bg.svg');
     box-sizing: border-box;
     padding-right: $padding-m;
+    margin: 3% 3%;
 
     p {
         font-size: $h4-size;
         font-family: $h4-family;
+        white-space: nowrap;
     }
 }
 
@@ -81,7 +71,7 @@
     padding-right: $padding-l;
     color: $light-color;
     flex: none;
-    margin-right: 5%;
+    margin-right: 4%;
 
     h4 {
         font-family: $h3-family;

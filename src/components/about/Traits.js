@@ -23,7 +23,7 @@ const Traits = () => {
     return (
         <ul className="c-traits">
             {traits.map(trait => (
-                <li className="c-traits__list-item">
+                <li key={trait.title} className="c-traits__list-item">
                     <header className="c-traits__item-header">
                         <h3>{trait.title}</h3>
                     </header>

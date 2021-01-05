@@ -38,7 +38,7 @@ const Contact = () => {
             </header>
             <ul className="c-contact__content">
                 {contactTypes.map(type => (
-                    <li className={`c-contact__list-item c-contact__list-item--${type.img}`}>
+                    <li key={type.title} className={`c-contact__list-item c-contact__list-item--${type.img}`}>
                         <ContactType type={type}/>
                     </li>
                 ))}

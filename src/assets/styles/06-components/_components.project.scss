@@ -4,13 +4,13 @@
 
 .c-project {
     list-style: none;
-    margin-right: 3%;
-    width: 30%;
+    margin: 0 3%;
+    width: $width_box-s;
 }
 
 .c-project__button {
     width: 100%;
-    height: calc((#{$width_box-l} * 0.3) * 1.22);
+    height: calc(#{$width_box-s} * 1.22);
     box-sizing: border-box;
     padding: $padding-l $padding-xl $padding-xl $padding-xl;
     background-repeat: no-repeat;
@@ -42,17 +42,21 @@
             width: $width_elm-s;
         }
     }
+
+    &--project1 {
+        background-image: url('../../images/fantasy_theme_project1.svg');
+    }
 }
 
 .c-project-button__header {
     margin-bottom: 50px;
-    margin-left: 10px;
+    margin-left: 5px;
     text-align: left;
 }
 
 .c-project__content {
-    width: $width_box-xl;
-    height: calc(#{$width_box-xl} * 0.57);
+    width: $width_box-xxl;
+    height: calc(#{$width_box-xxl} * 0.57);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -63,6 +67,10 @@
     box-sizing: border-box;
     display: flex;
     padding: $spacing-h-l $spacing-w-m;
+
+    &--project1 {
+        background-image: url('../../images/fantasy_theme_projects1_bg.svg');
+    }
 }
 
 .c-project__page {

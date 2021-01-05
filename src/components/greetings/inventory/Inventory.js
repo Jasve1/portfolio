@@ -1,12 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import InventoryNav from "./InventoryNav";
 import InventoryList from "./InventoryList";
 
 const Inventory = () => {
-    const categoryList = ["All"];
-    let currentInventory = [];
-    const [currentCategory, setCurrentCategory] = useState("All");
-
     const inventoryList = [
         {
             title: "The Atomic Potion",
@@ -87,6 +83,13 @@ const Inventory = () => {
         }
     ];
 
+    const categoryList = ["All"];
+    let currentInventory = [];
+    const numOfSlotsDefault = 2 * Math.round(inventoryList.length / 2);
+
+    const [currentCategory, setCurrentCategory] = useState("All");
+    const [numOfSlots, setNumOfSlots] = useState(numOfSlotsDefault);
+
     inventoryList.forEach(inventoryItem => {
         if(categoryList.indexOf(inventoryItem.category) === -1){
             categoryList.push(inventoryItem.category);
@@ -99,7 +102,21 @@ const Inventory = () => {
         currentInventory = inventoryList.filter(item => item.category === currentCategory);
     }
 
-    const numOfSlots = 2 * Math.round(inventoryList.length / 2);
+    const changeNumOfSlots = () => {
+        const inventory = document.querySelector('.c-inventory-list__content');
+        const item = document.querySelector('.c-inventory-list__item');
+        if (inventory && item) {
+            const itemsFit = Math.floor(inventory.clientWidth / item.offsetWidth);
+            const remainder = numOfSlotsDefault % itemsFit;
+            let missingSlots = remainder > 0 ? itemsFit - remainder : 0;
+            setNumOfSlots(numOfSlotsDefault + missingSlots);
+        }
+    };
+
+    useEffect(() => {
+        changeNumOfSlots();
+        window.addEventListener('resize', changeNumOfSlots);
+    });
     
     return (
         <section className="c-inventory">

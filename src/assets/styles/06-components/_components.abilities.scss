@@ -3,8 +3,8 @@
 ===================================================*/
 
 .c-abilities {
-    width: 45%;
-    height: calc((#{$width_box-l} * 0.45) * 1.11);
+    width: $width_box-m;
+    height: calc(#{$width_box-m} * 1.11);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -20,11 +20,11 @@
 }
 
 .c-abilities__list {
-    padding: $padding-xl;
+    padding: $padding-l $padding-xxl;
     box-sizing: border-box;
 }
 
 .c-abilities__list-item {
     @include sword;
-    margin-bottom: $padding-s;
+    margin-bottom: $padding-m;
 }

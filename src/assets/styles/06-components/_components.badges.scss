@@ -3,15 +3,73 @@
 ===================================================*/
 
 .c-badges {
-    list-style: none;
     display: flex;
+    align-items: center;
     position: fixed;
     top: $spacing-h-s;
     right: $spacing-w-s;
     z-index: 2;
 }
 
-.c-badges__item {
-    margin-left: $padding-m;
+.c-badges__list {
+    display: flex;
+    list-style: none;
+}
+
+.c-badges__trophy {
+    position: relative;
+    z-index: 1;
     width: $height_elm-s;
+    margin-left: -$height_elm-s;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &--show {
+        margin-left: $padding-l;
+    }
+
+    &--active {
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: scale(1.2) rotate(10deg);
+        transition: ease-in-out 0.2s;
+    }
+}
+
+.c-badges__trophy-num {
+    font-family: $h3-family;
+    position: absolute;
+    left: -$padding-xs;
+    top: -$padding-s;
+    background-image: url('../../images/trophy-num-bg.svg');
+    background-position: center;
+    background-size: 100%;
+    padding: $padding-xs;
+    background-repeat: no-repeat;
+    color: $light-color;
+    width: 1rem;
+    text-align: center;
+    animation-name: achieved;
+    animation-duration: 0.5s;
+
+    &:before {
+        transform: scale(1);
+        opacity: 0;
+        transition: ease-out 0.3s;
+    }
+}
+
+.c-badges__item {
+    margin-left: -$height_elm-s;
+    width: $height_elm-s;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    
+    &--show {
+        margin-left: $padding-m;
+        opacity: 1;
+    }
 }

@@ -13,26 +13,37 @@
     box-sizing: border-box;
 }
 
+.c-inventory-list__wrap {
+    width: $width_box-xl;
+    padding: $padding-s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $theme-color-second;
+    border: $thick-border $black;
+    border-radius: 23px;
+}
+
+.c-inventory-list__bg {
+    padding: $padding-m $padding-s;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../images/fantasy_theme_inventory-bg.svg');
+    border: $thick-border $black;
+    border-radius: 23px;
+}
+
 .c-inventory-list__content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    box-sizing: border-box;
-    padding: $padding-xs;
-    width: 70vw;
-    height: calc(70vw * 0.428);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    background-image: url('../../images/fantasy_theme_inventory-bg.svg');
-    box-sizing: border-box;
 }
 
 .c-inventory-list__item {
     list-style: none;
-    margin: $padding-s;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;

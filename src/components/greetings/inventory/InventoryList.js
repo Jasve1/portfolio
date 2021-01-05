@@ -26,9 +26,13 @@ const InventoryList = ({ currentInventory, numOfSlots }) => {
 
     return (
         <section className="c-inventory-list">
-           <ul className="c-inventory-list__content">
-                {itemSlots()}
-            </ul> 
+            <div className="c-inventory-list__wrap">
+                <div className="c-inventory-list__bg">
+                    <ul className="c-inventory-list__content">
+                        {itemSlots()}
+                    </ul>
+                </div>
+            </div>
         </section>
     );
 };

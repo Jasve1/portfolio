@@ -22,6 +22,7 @@ const App = () => {
     const [bottomBadge, setBottomBadge] = useState(false);
     const [allProjectsBadge, setAllProjectsBadge] = useState(false);
     const [trophyBadge, setTrophyBadge] = useState(false);
+    const [numAchieved, setNumAchieved] = useState(0);
 
     const checkView = (isVisible, elm) => {
         switch(elm){
@@ -47,21 +48,25 @@ const App = () => {
             case 'shortcut':
                 if(!shortcutBadge){
                     setShortcutBadge(true);
+                    setNumAchieved(numAchieved + 1);
                 }
                 break;
             case 'first-project': 
                 if(!firstProjectBadge){
                     setFirstProjectBadge(true);
+                    setNumAchieved(numAchieved + 1);
                 }
                 break;
             case 'bottom':
                 if(!bottomBadge){
                     setBottomBadge(true);
+                    setNumAchieved(numAchieved + 1);
                 }
                 break;
             case 'all-projects':
                 if(!allProjectsBadge){
                     setAllProjectsBadge(true);
+                    setNumAchieved(numAchieved + 1);
                 }
                 break;
             default:
@@ -95,7 +100,7 @@ const App = () => {
     }
 
     return (
-        <main className="o-wrap o-wrap__outer">
+        <div>
             <Header shortcutBadge={shortcutBadge}/>
             <main className="o-wrap o-wrap__main">
                 <section  id="top" className="o-wrap o-wrap__section">
@@ -123,6 +128,7 @@ const App = () => {
                 bottomBadge={bottomBadge}
                 allProjectsBadge={allProjectsBadge}
                 trophyBadge={trophyBadge}
+                numAchieved={numAchieved}
             />
             <Navigation 
                 projectsInView={projectsInView} 
@@ -131,7 +137,7 @@ const App = () => {
                 checkView={checkView}
                 checkAchieved={checkAchieved}
             />
-        </main>
+        </div>
     ) 
     
 }

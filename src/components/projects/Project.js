@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import classnames from 'classnames';
 import Modal from '../Modal';
 
 const Project = ({
@@ -29,13 +30,17 @@ const Project = ({
         return projectsViewed.some(viewed => viewed === project.id);
     }
 
+    const projectButtonClass = classnames(`c-project__button c-project__button--${project.id}`, {
+        'c-project__button--viewed': projectViewed()
+    });
+
     const renderProjectModal = () => (
         <Modal
             modalState={modalState}
             handleClick={handleClick}
             id={project.id}
         >
-            <article className="c-project__content o-modal__content">
+            <article className={`c-project__content c-project__content--${project.id} o-modal__content`}>
                 <section className="c-project__page">
                     <header className="c-project__header">
                         <h3>{project.title}</h3>
@@ -62,7 +67,7 @@ const Project = ({
 
     return (
         <li className="c-project">
-            <section className={`c-project__button ${projectViewed() && "c-project__button--viewed"}`} onClick={handleClick}>
+            <section className={projectButtonClass} onClick={handleClick}>
                 <header className="c-project-button__header">
                     <h3>{project.title}</h3>
                     <h4>By Jakob Kilias Svenningsen</h4>

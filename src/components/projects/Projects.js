@@ -53,6 +53,7 @@ const Projects = ({
                         checkAchieved={checkAchieved} 
                         setProjectsViewed={setProjectsViewed}
                         projectsViewed={projectsViewed}
+                        key={project.id}
                     />
                 ))}
             </ul>

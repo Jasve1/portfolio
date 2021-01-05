@@ -3,17 +3,18 @@
 ===================================================*/
 
 /** BOXES **/
-/* Width */
-$width_box-xs: 30.6vw;
-$width_box-s: 38.2vw;
-$width_box-m: 49.44vw;
-$width_box-l: 61.8vw;
-$width_box-xl: 80vw;
+/* STATIC */
+$width_box-xs: 240px;
+$width_box-s: 250px;
+$width_box-m: 400px;
+$width_box-l: 520px;
+$width_box-xl: 975px;
+$width_box-xxl: 90vw;
 
-/* Height */
-$height_box-s: 19.3vw;
-$height_box-m: 31.7vw;
-$height_box-l: 51.3vw;
+/* RESPONSIVE */
+$res-width_box-s: 19.3vw;
+$res-width_box-m: 31.7vw;
+$res-width_box-xl: 65vw;
 
 /** ELEMENTS **/
 /* Width */

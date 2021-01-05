@@ -27,7 +27,7 @@ const Description = () => {
             </header>
             <ul className="c-description__list">
                 {dscrpList.map(item => (
-                    <li className="c-description__list-item">
+                    <li key={item.title} className="c-description__list-item">
                         <header className="c-description__item-header">
                             <h4>{item.title}</h4>
                         </header>

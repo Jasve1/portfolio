@@ -3,8 +3,8 @@
 ===================================================*/
 
 .c-traits {
-    width: 50%;
-    height: calc((#{$width_box-l} * 0.5) * 1.03);
+    width: $width_box-l;
+    height: calc(#{$width_box-l} * 1.03);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -14,7 +14,7 @@
     flex-direction: column;
     margin-right: 5%;
     list-style: none;
-    padding: $padding-xl;
+    padding: $padding-xl $padding-xxl;
     justify-content: center;
 
     .c-traits__list-item:last-child {

@@ -3,16 +3,20 @@ import React from 'react';
 const Abilities = () => {
     const abilities = [
         {
-            title: "Languages",
-            content: "Danish and English"
+            title: 'Languages',
+            content: 'Danish and English'
         },
         {
-            title: "Creative Tools",
-            content: "Acrylic Painting, Water Color Painting, Adobe Illustrator and Programming"
+            title: 'Art',
+            content: 'Is spending a lot of time painting with acrylics and water color.'
         },
         {
-            title: "Terrain",
-            content: "Adept in metropolitan area and office (gives you douple speed in this terrain)."
+            title: 'Terrain',
+            content: 'Adept in any metropolitan area or inside an office.'
+        },
+        {
+            title: 'Interests',
+            content: 'Have read almost everything from the "A Song of Ice and Fire" universe.'
         }
     ];
 
@@ -23,7 +27,7 @@ const Abilities = () => {
             </header>
             <ul className="c-abilities__list">
             {abilities.map(ability => (
-                <li className="c-abilities__list-item">
+                <li key={ability.title} className="c-abilities__list-item">
                    <p><b>{ability.title}:</b> {ability.content}</p> 
                 </li>
             ))}

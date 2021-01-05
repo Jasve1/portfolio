@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import classnames from 'classnames';
 import Badge from "./Badge";
 
 const Badges = ({
@@ -6,7 +7,8 @@ const Badges = ({
     allProjectsBadge,
     bottomBadge,
     firstProjectBadge,
-    shortcutBadge
+    shortcutBadge,
+    numAchieved
 }) => {
     const badges = [
         {
@@ -41,14 +43,46 @@ const Badges = ({
         }
     ];
 
+    const [show, setShow] = useState(false);
+    const [showNum, setShowNum] = useState(false);
+
+    const handleClick = () => {
+        setShow(!show);
+        setShowNum(false);
+    };
+
+    useEffect(() => {
+        if (!show && numAchieved > 0) {
+            setShowNum(true);
+        }
+    }, [numAchieved]);
+
+    const trophyClass = classnames('c-badges__trophy', {
+        'c-badges__trophy--show': show,
+        'c-badges__trophy--active': showNum || allProjectsBadge
+    });
+
+    const badgeClass = classnames('c-badges__item', {
+        'c-badges__item--show': show
+    });
+
     return (
-        <ul className="c-badges">
-            {badges.map(badge => (
-                <li className="c-badges__item">
-                    <Badge badge={badge}/>
-                </li>
-            ))}
-        </ul>
+        <div className="c-badges">
+            <ul className="c-badges__list">
+                {badges.map(badge => (
+                    <li key={badge.title} className={badgeClass}>
+                        <Badge badge={badge}/>
+                    </li>
+                ))}
+            </ul>
+            <div className={trophyClass} onClick={handleClick}>
+                {
+                    showNum &&
+                    <span className="c-badges__trophy-num">{numAchieved}</span>
+                }
+                <img src={`/assets/images/trophy.svg`} alt="trophy" />
+            </div>
+        </div>
     );
 };
 

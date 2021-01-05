@@ -6,12 +6,8 @@
     margin: auto; 
 }
 
-.o-wrap__outer {
-    width: $width_box-xl;
-}
-
 .o-wrap__main {
-    width: $width_box-l;
+    width: $width_box-xl;
 
     .o-wrap__section:first-child {
         margin-top: 0;
