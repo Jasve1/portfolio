@@ -37,6 +37,15 @@
         transform: scale(1.2) rotate(10deg);
         transition: ease-in-out 0.2s;
     }
+
+    &:before {
+        content: '';
+        display: block;
+        width: $width_elm-s;
+        height: $width_elm-s;
+        position: absolute;
+        opacity: 0;
+    }
 }
 
 .c-badges__trophy-num {

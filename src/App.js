@@ -77,6 +77,7 @@ const App = () => {
     if(shortcutBadge && firstProjectBadge && bottomBadge && allProjectsBadge){
         if(!trophyBadge){
             setTrophyBadge(true);
+            setNumAchieved(numAchieved + 1);
         }
     }
 
@@ -112,7 +113,7 @@ const App = () => {
                     </VizSensor>
                 </section>
                 <section id="about" className="o-wrap o-wrap__section">
-                    <VizSensor partialVisibility={true} offset={{top:200}} onChange={(isVisible) => checkView(isVisible, 'about')}>
+                    <VizSensor partialVisibility={true} offset={{top:400, bottom:300}} onChange={(isVisible) => checkView(isVisible, 'about')}>
                       <About />  
                     </VizSensor>
                 </section>
@@ -129,6 +130,7 @@ const App = () => {
                 allProjectsBadge={allProjectsBadge}
                 trophyBadge={trophyBadge}
                 numAchieved={numAchieved}
+                setNumAchieved={setNumAchieved}
             />
             <Navigation 
                 projectsInView={projectsInView} 

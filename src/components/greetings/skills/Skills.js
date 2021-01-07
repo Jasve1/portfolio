@@ -8,21 +8,21 @@ function Skills({type}){
             title: "HTML5",
             name: "html",
             img: "html-icon",
-            descrp: "This ring will, through the power of HTML, bend the DOM to your will",
+            descrp: "Bend the DOM to your will.",
             bonus: ["Accessibility", "Semantic HTML"]
         },
         {
             title: "CSS3",
             name: "css",
             img: "css-icon",
-            descrp: "Big, medium or small this talisman will charm all screen sizes while keeping the specificity points in line",
+            descrp: "Charm all screen sizes while keeping the specificity points in line.",
             bonus: ["ITCSS", "BEM"]
         },
         {
             title: "SCSS",
             name: "scss",
             img: "scss-icon",
-            descrp: "Big, medium or small this talisman will charm all screen sizes while keeping the specificity points in line",
+            descrp: "Extends your control over the specificity points.",
             bonus: ["ITCSS", "BEM"]
         },
         {
@@ -53,35 +53,35 @@ function Skills({type}){
             title: "Adobe Photoshop",
             name: "photoshop",
             img: "photoshop-icon",
-            descrp: "",
+            descrp: "Bend reality.",
             bonus: [""]
         },
         {
             title: "Adobe Illustrator",
             name: "illustrator",
             img: "illustrator-icon",
-            descrp: "",
+            descrp: "Create something from nothing.",
             bonus: [""]
         },
         {
             title: "Adobe InDesign",
             name: "indesign",
             img: "indesign-icon",
-            descrp: "",
+            descrp: "Alter legendary documents.",
             bonus: [""]
         },
         {
             title: "Adobe After Effects",
             name: "after-effects",
             img: "after-effects-icon",
-            descrp: "",
+            descrp: "Control your own world.",
             bonus: [""]
         },
         {
             title: "Blender",
             name: "blender",
             img: "blender-icon",
-            descrp: "",
+            descrp: "Master the 3D space.",
             bonus: [""]
         }
     ];

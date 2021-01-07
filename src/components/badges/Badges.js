@@ -8,7 +8,8 @@ const Badges = ({
     bottomBadge,
     firstProjectBadge,
     shortcutBadge,
-    numAchieved
+    numAchieved,
+    setNumAchieved
 }) => {
     const badges = [
         {
@@ -48,6 +49,7 @@ const Badges = ({
 
     const handleClick = () => {
         setShow(!show);
+        setNumAchieved(0);
         setShowNum(false);
     };
 
@@ -59,7 +61,7 @@ const Badges = ({
 
     const trophyClass = classnames('c-badges__trophy', {
         'c-badges__trophy--show': show,
-        'c-badges__trophy--active': showNum || allProjectsBadge
+        'c-badges__trophy--active': showNum || trophyBadge
     });
 
     const badgeClass = classnames('c-badges__item', {

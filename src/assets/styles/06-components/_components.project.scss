@@ -4,7 +4,7 @@
 
 .c-project {
     list-style: none;
-    margin: 0 3%;
+    margin: 0 auto;
     width: $width_box-s;
 }
 
@@ -46,6 +46,9 @@
     &--project1 {
         background-image: url('../../images/fantasy_theme_project1.svg');
     }
+    &--project2 {
+        background-image: url('../../images/fantasy_theme_project2.svg');
+    }
 }
 
 .c-project-button__header {
@@ -70,6 +73,9 @@
 
     &--project1 {
         background-image: url('../../images/fantasy_theme_projects1_bg.svg');
+    }
+    &--project2 {
+        background-image: url('../../images/fantasy_theme_projects2_bg.svg');
     }
 }
 

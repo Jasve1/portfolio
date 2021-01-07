@@ -8,15 +8,15 @@ const Abilities = () => {
         },
         {
             title: 'Art',
-            content: 'Is spending a lot of time painting with acrylics and water color.'
+            content: 'Adept in painting with acrylics and water color.'
         },
         {
             title: 'Terrain',
             content: 'Adept in any metropolitan area or inside an office.'
         },
         {
-            title: 'Interests',
-            content: 'Have read almost everything from the "A Song of Ice and Fire" universe.'
+            title: 'Fun Facts',
+            content: 'Have an almost annoying repertoire of random facts from sci-fi, fantasy and manga.'
         }
     ];
 
