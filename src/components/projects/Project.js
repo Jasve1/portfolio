@@ -55,12 +55,13 @@ const Project = ({
                             ))}
                         </ul>
                     </article>
+                </section>
+                <section className="c-project__page">
                     <article className="c-project__article">
                         <h4>Description:</h4>
                         <p>{project.dscrp}</p>
                     </article>
                 </section>
-                <section className="c-project__page"></section>
             </article>
         </Modal>
     );

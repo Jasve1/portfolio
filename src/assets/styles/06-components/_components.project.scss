@@ -59,17 +59,17 @@
 
 .c-project__content {
     width: $width_box-xxl;
-    height: calc(#{$width_box-xxl} * 0.57);
+    height: calc(#{$width_box-xxl} * 0.54);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-image: url('../../images/fantasy_theme_projects_bg.svg');
-    border-radius: 50px;
-    border-top-right-radius: 200px;
-    border-top-left-radius: 200px;
+    border-radius: 34px;
+    border-top-right-radius: 144px;
+    border-top-left-radius: 144px;
     box-sizing: border-box;
     display: flex;
-    padding: $spacing-h-l $spacing-w-m;
+    padding: $spacing-h-m $spacing-w-m $spacing-h-l;
 
     &--project1 {
         background-image: url('../../images/fantasy_theme_projects1_bg.svg');
@@ -82,8 +82,8 @@
 .c-project__page {
     padding: $padding-xl;
     padding-top: $padding-s;
-    width: 45%;
-    margin: 0 2.5%;
+    width: 40%;
+    margin: 0 5%;
     display: flex;
     flex-direction: column;
 
