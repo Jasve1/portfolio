@@ -41,7 +41,8 @@ $header-size: 25rem;
 
 .c-greetings__profile-pic {
     margin-top: $spacing-h-s;
-    width: 30%;
+    width: 300px;
+    margin-bottom: $padding-m;
 }
 
 $header-size: 13rem;
@@ -50,18 +51,11 @@ $header-size: 13rem;
     display: flex;
     width: 100%;
     justify-content: center;
-
-    .c-greetings__content-item:first-child {
-        margin-right: calc(40% - #{$header-size});
-    }
-
-    .c-greetings__content-item:last-child {
-        margin-left: calc(40% - #{$header-size});
-    }
 }
 
 .c-greetings__content-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin: 0 auto;
 }

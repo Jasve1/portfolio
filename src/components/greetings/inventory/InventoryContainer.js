@@ -1,19 +1,20 @@
 import React from "react";
 import Inventory from "./Inventory";
-import GreetingsModal from '../GreetingsModal';
+import ToggleModal from '../../modal/ToggleModal';
 
-const InventoryContainer = ({setModalOpen}) => (
+const InventoryContainer = () => (
     <section className="c-inventory-container">
-        <GreetingsModal
-            setModalOpen={setModalOpen}
-            title="Inventory"
-            src="inventory-bag"
+        <ToggleModal
+            subTitle="Inventory"
+            img="inventory-bag"
             alt="Inventory Bag"
+            customeClass="c-greetings-button"
+            classBundle="c-greetings-button"
         >
             <section className="c-inventory-container__content o-modal__content">
                 <Inventory />
             </section>
-        </GreetingsModal>
+        </ToggleModal>
     </section>
 );
 

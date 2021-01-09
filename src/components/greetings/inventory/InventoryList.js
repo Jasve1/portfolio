@@ -1,5 +1,5 @@
 import React from 'react';
-import useInfoboxPos from "../hooks/useInfoboxPos";
+import useInfoboxPos from "../../hooks/useInfoboxPos";
 import InventoryItem from "./InventoryItem";
 
 const InventoryList = ({ currentInventory, numOfSlots }) => {

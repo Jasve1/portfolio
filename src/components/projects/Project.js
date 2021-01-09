@@ -1,85 +1,70 @@
-import React, { useState } from "react";
+import React from "react";
 import classnames from 'classnames';
-import Modal from '../Modal';
+import ToggleModal from '../modal/ToggleModal';
 
 const Project = ({
     project,
-    setModalOpen,
     checkAchieved,
     setProjectsViewed,
     projectsViewed
 }) => {
-    const [modalState, setModalState] = useState('closed');
-
-    const handleClick = (e) => {
-        e.preventDefault();
-        if(modalState === 'closed'){
-            setModalState('open');
-            setModalOpen();
-        }else{
-            setModalState('closed');
-            setModalOpen();
+    const callBack = (open, id) => {
+        if (open){
             checkAchieved('first-project');
-            if(projectsViewed.indexOf(e.target.id) === -1){
-                setProjectsViewed([...projectsViewed, e.target.id]);
+            if(projectsViewed.indexOf(id) === -1){
+                setProjectsViewed([...projectsViewed, id]);
             }
         }
-    }
+    };
 
     const projectViewed = () => {
         return projectsViewed.some(viewed => viewed === project.id);
-    }
+    };
 
     const projectButtonClass = classnames(`c-project__button c-project__button--${project.id}`, {
         'c-project__button--viewed': projectViewed()
     });
 
     const renderProjectModal = () => (
-        <Modal
-            modalState={modalState}
-            handleClick={handleClick}
-            id={project.id}
-        >
-            <article className={`c-project__content c-project__content--${project.id} o-modal__content`}>
-                <section className="c-project__page">
-                    <header className="c-project__header">
-                        <h3>{project.title}</h3>
-                    </header>
-                    <article className="c-project__article">
-                        <h4 className="c-project__role-header">Roles:</h4>
-                        <ul className="c-project__role-list">
-                            {project.roles.map((role) => (
-                                <li className="c-project__role-item">
-                                    <p>{role}</p>
-                                </li>
-                            ))}
-                        </ul>
-                    </article>
-                </section>
-                <section className="c-project__page">
-                    <article className="c-project__article">
-                        <h4>Description:</h4>
-                        <p>{project.dscrp}</p>
-                    </article>
-                </section>
-            </article>
-        </Modal>
+        <article className={`c-project__content c-project__content--${project.id} o-modal__content`}>
+            <section className="c-project__page">
+                <header className="c-project__header">
+                    <h3>{project.title}</h3>
+                </header>
+                <article className="c-project__article">
+                    <h4 className="c-project__role-header">Roles:</h4>
+                    <ul className="c-project__role-list">
+                        {project.roles.map((role) => (
+                            <li className="c-project__role-item">
+                                <p>{role}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </article>
+            </section>
+            <section className="c-project__page">
+                <article className="c-project__article">
+                    <h4>Description:</h4>
+                    <p>{project.dscrp}</p>
+                </article>
+            </section>
+        </article>
     );
 
     return (
         <li className="c-project">
-            <section className={projectButtonClass} onClick={handleClick}>
-                <header className="c-project-button__header">
-                    <h3>{project.title}</h3>
-                    <h4>By Jakob Kilias Svenningsen</h4>
-                </header>
-            </section>
-            {
-                modalState === 'open' &&
-                renderProjectModal()
-            }
+            <ToggleModal
+                callBack={callBack}
+                id={project.id}
+                title={project.title}
+                subTitle="By Jakob Kilias Svenningsen"
+                classBundle={projectButtonClass}
+                customeClass="c-project-button"
+            >
+                { renderProjectModal() }
+            </ToggleModal>
         </li>
-    )
-}
+    );
+};
 
 export default Project;

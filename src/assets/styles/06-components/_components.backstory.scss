@@ -4,7 +4,7 @@
 
 .c-backstory {
     width: 100%;
-    height: calc(#{$width_box-xl} * 0.78);
+    height: calc(#{$width_box-xxl} * 0.78);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -14,6 +14,14 @@
     flex-direction: column;
     align-items: center;
     padding: 0 $padding-xl;
+
+    @media #{$desktop-small} {
+        height: calc(#{$width_box-xl} * 0.78);
+    }
+    @media #{$tablet-large} {
+        height: calc(#{$width_box-l} * 1.15);
+        background-image: url('../../images/fantasy_theme_ability-bg.svg');
+    }
 }
 
 .c-backstory__header {
@@ -28,5 +36,9 @@
 
     p {
         margin: 1% 0;
+    }
+
+    @media #{$tablet-large} {
+        padding: $padding-m $padding-l;
     }
 }

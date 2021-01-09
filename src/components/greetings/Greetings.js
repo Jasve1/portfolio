@@ -2,7 +2,7 @@ import React from 'react';
 import SkillsContainer from "./skills/SkillsContainer";
 import InventoryContainer from "./inventory/InventoryContainer";
 
-const Greetings = ({setModalOpen}) => (
+const Greetings = () => (
     <section className="c-greetings">
 
         <header className="c-greetings__header">
@@ -16,10 +16,10 @@ const Greetings = ({setModalOpen}) => (
 
         <section className="c-greetings__content">
             <section className="c-greetings__content-item">
-                <SkillsContainer setModalOpen={setModalOpen}/>
+                <SkillsContainer />
             </section>
             <section className="c-greetings__content-item">
-                <InventoryContainer setModalOpen={setModalOpen}/>
+                <InventoryContainer />
             </section>
         </section>
 

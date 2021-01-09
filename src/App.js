@@ -10,9 +10,6 @@ import Badges from "./components/badges/Badges";
 import About from "./components/about/About";
 
 const App = () => {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [scrollPos, setScrollPos] = useState(0);
-
     const [projectsInView, setProjectsInview] = useState(false);
     const [aboutInView, setAboutInview] = useState(false);
     const [contactInView, setContactInview] = useState(false);
@@ -41,7 +38,7 @@ const App = () => {
             default:
                 return;
         }
-    }
+    };
 
     const checkAchieved = (badge) => {
         switch(badge){
@@ -72,44 +69,25 @@ const App = () => {
             default:
                 return;
         }
-    }
+    };
 
     if(shortcutBadge && firstProjectBadge && bottomBadge && allProjectsBadge){
         if(!trophyBadge){
             setTrophyBadge(true);
             setNumAchieved(numAchieved + 1);
         }
-    }
-
-    const toggleModal = () => {
-        if(modalOpen) {
-            setModalOpen(false);
-            document.body.style.position = '';
-            document.body.style.top = '';
-            window.scrollBy({
-                top: scrollPos,
-                left: 0,
-                behavior: 'auto'
-              })
-        } else {
-            setModalOpen(true);
-            const posistion = window.scrollY;
-            document.body.style.position = 'fixed';
-            document.body.style.top = `-${posistion}px`;
-            setScrollPos(posistion);
-        }
-    }
+    };
 
     return (
         <div>
             <Header shortcutBadge={shortcutBadge}/>
             <main className="o-wrap o-wrap__main">
                 <section  id="top" className="o-wrap o-wrap__section">
-                    <Greetings setModalOpen={toggleModal}/>
+                    <Greetings />
                 </section>
                 <section id="projects" className="o-wrap o-wrap__section">
                     <VizSensor onChange={(isVisible) => checkView(isVisible, 'projects')}>
-                       <Projects setModalOpen={toggleModal} checkAchieved={checkAchieved} allProjectsBadge={allProjectsBadge}/> 
+                       <Projects checkAchieved={checkAchieved} allProjectsBadge={allProjectsBadge}/> 
                     </VizSensor>
                 </section>
                 <section id="about" className="o-wrap o-wrap__section">
@@ -123,7 +101,7 @@ const App = () => {
                     </VizSensor>
                 </section>
             </main>
-            <Badges 
+            <Badges
                 shortcutBadge={shortcutBadge}
                 firstProjectBadge={firstProjectBadge}
                 bottomBadge={bottomBadge}
@@ -132,9 +110,9 @@ const App = () => {
                 numAchieved={numAchieved}
                 setNumAchieved={setNumAchieved}
             />
-            <Navigation 
-                projectsInView={projectsInView} 
-                aboutInView={aboutInView} 
+            <Navigation
+                projectsInView={projectsInView}
+                aboutInView={aboutInView}
                 contactInView={contactInView}
                 checkView={checkView}
                 checkAchieved={checkAchieved}

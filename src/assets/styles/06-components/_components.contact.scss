@@ -20,7 +20,7 @@
 
 .c-contact__content {
     width: 100%;
-    height: calc(#{$width_box-xl} * 1.16);
+    height: calc(#{$width_box-xxl} * 1.16);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -29,6 +29,13 @@
     display: flex;
     flex-direction: column;
     padding: 0 $padding-xl;
+
+    @media #{$desktop-small} {
+        height: calc(#{$width_box-xl} * 1.16);
+    }
+    @media #{$tablet-large} {
+        height: $width_box-l;
+    }
 }
 
 .c-contact__list-item {
@@ -55,10 +62,18 @@
     &--email {
         margin-top: 10%;
         margin-left: 10%;
+
+        @media #{$tablet-large} {
+            margin-top: 15%;
+        }
     }
 
     &--phone {
         align-self: flex-end;
         margin-right: 25%;
+
+        @media #{$desktop-small} {
+            margin-top: 5%;
+        }
     }
 }

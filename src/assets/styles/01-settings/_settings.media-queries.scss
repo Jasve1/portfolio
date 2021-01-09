@@ -1,0 +1,11 @@
+/*==================================================
+    01-SETTINGS/MEDIA-QUERIES
+===================================================*/
+$screen: 'only screen';
+
+$portrait: '#{$screen} and (orientation: portrait)';
+
+$mobile: '#{$screen} and (max-width: 479px)';
+$tablet-small: '#{$screen} and (max-width: 767px)';
+$tablet-large: '#{$screen} and (max-width: 1023px)';
+$desktop-small: '#{$screen} and (max-width: 1279px)';

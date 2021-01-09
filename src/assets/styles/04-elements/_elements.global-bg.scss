@@ -1,6 +1,9 @@
 /*==================================================
     04-ELEMENTS/GLOBAL-BG
 ===================================================*/
+.no-scroll {
+    position: fixed;
+}
 
 #root {
     background-color: $bg-color;

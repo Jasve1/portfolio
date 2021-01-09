@@ -7,15 +7,26 @@
 }
 
 .o-wrap__main {
-    width: $width_box-xl;
+    width: $width_box-xxl;
 
     .o-wrap__section:first-child {
         margin-top: 0;
-        padding-top: $spacing-w-m;
+        padding-top: $spacing-w-s;
+
+        @media #{$tablet-large} {
+            padding-top: $spacing-w-m;
+        }
     }
 
     .o-wrap__section:last-child {
         margin-bottom: 0;
+    }
+
+    @media #{$desktop-small} {
+        width: $width_box-xl;
+    }
+    @media #{$tablet-large} {
+        width: $width_box-l;
     }
 }
 

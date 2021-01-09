@@ -4,19 +4,31 @@
 
 .c-skills-container__content {
     display: flex;
-    width: 75vw;
+    width: $res-width_box-xxl;
     box-sizing: border-box;
     padding: $padding-l;
     background-color: $light-color;
     border: $theme-color-second $thick-border;
     align-items: center;
     justify-content: center;
+    margin-top: $spacing-h-s;
 
-    .c-skills:first-child {
-        margin-right: 10%;
+    @media #{$tablet-large} {
+        flex-wrap: wrap-reverse;
+        margin-bottom: $spacing-h-l;
+    }
+}
+
+.c-skills-container__description {
+    width: 33%;
+    order: 2;
+
+    h3,
+    p {
+        text-align: center;
     }
 
-    .c-skills:last-child {
-        margin-left: 10%;
+    @media #{$tablet-large} {
+        order: 3;
     }
 }

@@ -87,7 +87,7 @@ function Skills({type}){
     ];
 
     return (
-        <section className="c-skills">
+        <section className={`c-skills c-skills--${type}`}>
             <header className={`c-skills__header c-skills__header--${type}`}>
                 <h3>{type === "code" ? "Code" : "Design"}</h3>
             </header>

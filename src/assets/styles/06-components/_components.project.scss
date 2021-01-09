@@ -58,8 +58,8 @@
 }
 
 .c-project__content {
-    width: $width_box-xxl;
-    height: calc(#{$width_box-xxl} * 0.54);
+    width: $res-width_box-xxl;
+    height: calc(#{$res-width_box-xxl} * 0.54);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

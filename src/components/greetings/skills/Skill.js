@@ -1,5 +1,5 @@
 import React from 'react';
-import useInfoboxPos from "../hooks/useInfoboxPos";
+import useInfoboxPos from "../../hooks/useInfoboxPos";
 import Infobox from "../../Infobox";
 
 const Skill = ({skill}) => {

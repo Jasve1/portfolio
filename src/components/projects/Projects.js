@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Project from "./Project";
 
 const Projects = ({
-    setModalOpen,
     checkAchieved,
     allProjectsBadge
 }) => {
@@ -49,7 +48,6 @@ const Projects = ({
                 {projects.map(project => (
                     <Project 
                         project={project} 
-                        setModalOpen={setModalOpen} 
                         checkAchieved={checkAchieved} 
                         setProjectsViewed={setProjectsViewed}
                         projectsViewed={projectsViewed}

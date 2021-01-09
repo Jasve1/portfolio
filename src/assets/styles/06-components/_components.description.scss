@@ -7,6 +7,10 @@
     flex-direction: column;
     width: 60%;
     align-items: center;
+
+    @media #{$tablet-large} {
+        width: 100%;
+    }
 }
 
 .c-description__header {
