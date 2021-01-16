@@ -9,11 +9,19 @@
     top: $spacing-h-s;
     right: $spacing-w-s;
     z-index: 2;
+
+    @media #{$tablet-small} {
+        flex-direction: column-reverse;
+    }
 }
 
 .c-badges__list {
     display: flex;
     list-style: none;
+
+    @media #{$tablet-small} {
+        flex-direction: column;
+    }
 }
 
 .c-badges__trophy {
@@ -27,6 +35,11 @@
 
     &--show {
         margin-left: $padding-l;
+
+        @media #{$tablet-small} {
+            margin-bottom: $padding-l;
+            margin-left: 0;
+        }
     }
 
     &--active {
@@ -80,5 +93,10 @@
     &--show {
         margin-left: $padding-m;
         opacity: 1;
+
+        @media #{$tablet-small} {
+            margin-bottom: $padding-m;
+            margin-left: 0;
+        }
     }
 }
