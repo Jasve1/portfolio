@@ -11,6 +11,11 @@
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+
+    @media #{$tablet-small} {
+        max-height: 69vh;
+        overflow-y: scroll;
+    }
 }
 
 .c-inventory-list__wrap {
@@ -22,6 +27,11 @@
     background-color: $theme-color-second;
     border: $thick-border $black;
     border-radius: 23px;
+
+    @media #{$tablet-large} {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 .c-inventory-list__bg {

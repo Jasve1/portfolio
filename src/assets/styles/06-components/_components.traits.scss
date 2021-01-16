@@ -25,6 +25,15 @@
         margin-right: 0;
         margin-bottom: 5%;
     }
+
+    @media #{$tablet-small} {
+        width: 100%;
+        height: calc(#{$width_box-m} * 1.03);
+    }
+
+    @media #{$mobile} {
+        height: calc(95vw * 1.03);
+    }
 }
 
 .c-traits__list-item {

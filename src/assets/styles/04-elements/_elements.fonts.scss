@@ -2,9 +2,17 @@
     04-ELEMENTS/FONTS 
 ===================================================*/
 
-body {
+html {
     font-size: $global-size;
     color: $dark-color;
+
+    @media #{$tablet-small} {
+        font-size: 14px;
+    }
+
+    @media #{$mobile} {
+        font-size: 12px;
+    }
 }
 
 h1 {

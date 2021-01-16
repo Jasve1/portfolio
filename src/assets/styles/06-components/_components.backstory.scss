@@ -18,9 +18,18 @@
     @media #{$desktop-small} {
         height: calc(#{$width_box-xl} * 0.78);
     }
+
     @media #{$tablet-large} {
         height: calc(#{$width_box-l} * 1.15);
         background-image: url('../../images/fantasy_theme_ability-bg.svg');
+    }
+
+    @media #{$tablet-small} {
+        height: calc(#{$width_box-m} * 1.15);
+    }
+
+    @media #{$mobile} {
+        height: calc(95vw * 1.15);
     }
 }
 

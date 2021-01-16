@@ -16,17 +16,34 @@
         @media #{$tablet-large} {
             padding-top: $spacing-w-m;
         }
+
+        @media #{$tablet-small} {
+            padding-top: $spacing-w-l;
+        }
     }
 
     .o-wrap__section:last-child {
         margin-bottom: 0;
+
+        @media #{$tablet-small} {
+            padding-bottom: $spacing-w-xl;
+        }
     }
 
     @media #{$desktop-small} {
         width: $width_box-xl;
     }
+
     @media #{$tablet-large} {
         width: $width_box-l;
+    }
+
+    @media #{$tablet-small} {
+        width: $width_box-m;
+    }
+
+    @media #{$mobile} {
+        width: 95vw;
     }
 }
 

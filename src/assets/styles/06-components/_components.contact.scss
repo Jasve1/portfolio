@@ -4,7 +4,6 @@
 
 .c-contact {
     width: 100%;
-    padding: $padding-xl;
     box-sizing: border-box;
 }
 
@@ -20,7 +19,7 @@
 
 .c-contact__content {
     width: 100%;
-    height: calc(#{$width_box-xxl} * 1.16);
+    height: calc(#{$width_box-xxl} * 1.14);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -31,10 +30,19 @@
     padding: 0 $padding-xl;
 
     @media #{$desktop-small} {
-        height: calc(#{$width_box-xl} * 1.16);
+        height: calc(#{$width_box-xl} * 1.14);
     }
+
     @media #{$tablet-large} {
-        height: $width_box-l;
+        height: calc(#{$width_box-l} * 1.14);
+    }
+
+    @media #{$tablet-small} {
+        height: calc(#{$width_box-m} * 1.14);
+    }
+
+    @media #{$mobile} {
+        height: calc(95vw * 1.14);
     }
 }
 
@@ -50,7 +58,7 @@
     }
 
     &--instagram {
-        margin-top: 10%;
+        margin-top: 4%;
         margin-left: 20%;
     }
 
@@ -62,18 +70,10 @@
     &--email {
         margin-top: 10%;
         margin-left: 10%;
-
-        @media #{$tablet-large} {
-            margin-top: 15%;
-        }
     }
 
     &--phone {
         align-self: flex-end;
         margin-right: 25%;
-
-        @media #{$desktop-small} {
-            margin-top: 5%;
-        }
     }
 }

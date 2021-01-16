@@ -13,6 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media #{$mobile} {
+        width: 100%;
+        height: calc(95vw * 1.11);
+    }
 }
 
 .c-abilities__header {

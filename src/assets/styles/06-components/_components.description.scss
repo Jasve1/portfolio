@@ -43,10 +43,10 @@
 }
 
 .c-description__list-item {
-    width: $width_box-s;
+    width: $width_elm-xl;
     display: flex;
     align-items: center;
-    height: calc(#{$width_box-s} * 0.31);
+    height: calc(#{$width_elm-xl} * 0.31);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -76,6 +76,9 @@
     color: $light-color;
     flex: none;
     margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     h4 {
         font-family: $h3-family;

@@ -34,6 +34,17 @@
         width: $width_elm-m;
         flex: none;
     }
+
+    @media #{$tablet-small} {
+        img {
+            margin: 0 $spacing-h-s;
+        }
+    
+        &::before,
+        &::after {
+            width: $width_elm-s;
+        }
+    }
 }
 
 @mixin profile-header {

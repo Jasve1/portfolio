@@ -7,19 +7,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .c-inventory-nav__list {
     display: flex;
+    width: 80%;
 
     .c-inventory-nav__list-item:last-child {
         margin-right: 0;
     }
+
+    @media #{$tablet-small} {
+        width: 90%;
+    }
 }
 
 .c-inventory-nav__list-item {
+    position: relative;
     background-color: $light-color;
-    margin-right: $padding-m;
+    margin: 0 auto;
     list-style: none;
     cursor: pointer;
     padding: $padding-m;
@@ -37,5 +44,6 @@
         border-bottom: none;
         margin-bottom: -3px;
         transform: scale(1.2);
+        z-index: 1;
     }
 }

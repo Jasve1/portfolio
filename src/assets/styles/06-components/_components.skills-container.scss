@@ -14,14 +14,21 @@
     margin-top: $spacing-h-s;
 
     @media #{$tablet-large} {
-        flex-wrap: wrap-reverse;
-        margin-bottom: $spacing-h-l;
+        flex-wrap: wrap;
+        margin-bottom: $spacing-h-s;
+        max-height: 75vh;
+        overflow-y: scroll;
+    }
+
+    @media #{$tablet-small} {
+        max-width: $width_box-l;
     }
 }
 
 .c-skills-container__description {
     width: 33%;
     order: 2;
+    margin: $padding-l 0;
 
     h3,
     p {
@@ -30,5 +37,10 @@
 
     @media #{$tablet-large} {
         order: 3;
+        min-width: $width_elm-l;
+    }
+
+    @media #{$tablet-small} {
+        order: 1;
     }
 }

@@ -8,6 +8,14 @@
     &:hover {
         .c-contact-type__msg {
             transform:scale(1) translate(0, -50px);
+
+            @media #{$tablet-small} {
+                transform: scale(1) translate(-42px, -50px);
+
+                &--email {
+                    transform: scale(1) translate(0px, -50px);
+                }
+            }
         }
     }
 }

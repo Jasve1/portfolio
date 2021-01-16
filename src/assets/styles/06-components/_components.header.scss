@@ -25,6 +25,10 @@
             display: block;
             margin: $spacing-h-s 0;
         }
+
+        @media #{$tablet-small} {
+            display: none;
+        }
     }
 }
 
@@ -42,4 +46,8 @@
     -webkit-text-orientation: upright;
     text-orientation: upright;
     color: #385650;
+
+    @media #{$tablet-small} {
+        display: none;
+    }
 }

@@ -86,7 +86,7 @@ const App = () => {
                     <Greetings />
                 </section>
                 <section id="projects" className="o-wrap o-wrap__section">
-                    <VizSensor onChange={(isVisible) => checkView(isVisible, 'projects')}>
+                    <VizSensor partialVisibility={true} offset={{top:400, bottom:300}} onChange={(isVisible) => checkView(isVisible, 'projects')}>
                        <Projects checkAchieved={checkAchieved} allProjectsBadge={allProjectsBadge}/> 
                     </VizSensor>
                 </section>

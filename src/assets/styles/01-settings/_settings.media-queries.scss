@@ -5,7 +5,8 @@ $screen: 'only screen';
 
 $portrait: '#{$screen} and (orientation: portrait)';
 
-$mobile: '#{$screen} and (max-width: 479px)';
-$tablet-small: '#{$screen} and (max-width: 767px)';
-$tablet-large: '#{$screen} and (max-width: 1023px)';
-$desktop-small: '#{$screen} and (max-width: 1279px)';
+$mobile: '#{$screen} and (max-width: 520px)';
+$tablet-small: '#{$screen} and (max-width: 768px)';
+$tablet-large: '#{$screen} and (max-width: 1024px)';
+$desktop-small: '#{$screen} and (max-width: 1280px)';
+$desktop-only: '#{$screen} and (min-width: 1023px)';

@@ -33,11 +33,19 @@
         @media #{$tablet-large} {
             order: 1;
         }
+
+        @media #{$tablet-small} {
+            order: 3;
+        }
     }
 
     @media #{$tablet-large} {
         width: $width_elm-xl;
         height: calc(#{$width_elm-xl} * 1.79);
+    }
+
+    @media #{$tablet-small} {
+        margin: $padding-m auto;
     }
 }
 

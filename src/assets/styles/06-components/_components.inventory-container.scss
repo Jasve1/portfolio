@@ -5,4 +5,8 @@
 .c-inventory-container__content {
     width: $res-width_box-xxl;
     box-sizing: border-box;
+
+    @media #{$tablet-small} {
+        width: 100vw;
+    }
 }
