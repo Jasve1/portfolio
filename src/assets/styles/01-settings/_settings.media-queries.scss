@@ -4,6 +4,7 @@
 $screen: 'only screen';
 
 $portrait: '#{$screen} and (orientation: portrait)';
+$non-touch: '(hover: hover) and (pointer: fine)';
 
 $mobile: '#{$screen} and (max-width: 520px)';
 $tablet-small: '#{$screen} and (max-width: 768px)';

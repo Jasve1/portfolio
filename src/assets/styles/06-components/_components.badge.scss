@@ -7,8 +7,10 @@
     width: 100%;
 
     &--achieved {
-        &:hover .c-infobox {
-            display: flex;
+        @media #{$non-touch} {
+            &:hover .c-infobox {
+                display: flex;
+            }
         }
 
         .c-badge__icon {

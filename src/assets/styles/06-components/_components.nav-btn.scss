@@ -43,21 +43,23 @@ $nav-btn-text-width: 4rem;
     &:focus {
         outline: none;
     }
-    
-    &:hover .c-nav-btn__text {
-        opacity: 1;
-        transform: scaleX(1);
-        margin-right: calc(#{$padding-s} + #{$nav-btn-icon-size});
-        width: $nav-btn-text-width;
-        transition: ease-in-out 0.2s;
-    }
-    
-    &:hover {
-        &::before,
-        &::after {
-            transform: translateX(-$padding-m);
+
+    @media #{$non-touch} {
+        &:hover .c-nav-btn__text {
+            opacity: 1;
+            transform: scaleX(1);
+            margin-right: calc(#{$padding-s} + #{$nav-btn-icon-size});
+            width: $nav-btn-text-width;
             transition: ease-in-out 0.2s;
-        }
+        }    
+
+        &:hover {
+            &::before,
+            &::after {
+                transform: translateX(-$padding-m);
+                transition: ease-in-out 0.2s;
+            }
+        }   
     }
 
     @media #{$tablet-small} {
@@ -80,21 +82,23 @@ $nav-btn-text-width: 4rem;
             display: none;
         }
 
-        &:hover .c-nav-btn__text {
-            margin-top: calc(#{$padding-l} + #{$nav-btn-icon-size});
-            margin-right: 0;
-            width: $nav-btn-text-width;
-            transition: ease-in-out 0.2s;
-        }
+        @media #{$non-touch} {
+            &:hover .c-nav-btn__text {
+                margin-top: calc(#{$padding-l} + #{$nav-btn-icon-size});
+                margin-right: 0;
+                width: $nav-btn-text-width;
+                transition: ease-in-out 0.2s;
+            }
 
-        &:hover {
-            margin-top: -$padding-l;
-            transform: scale(1.1);
+            &:hover {
+                margin-top: -$padding-l;
+                transform: scale(1.1);
 
-            &::before {
-                transform: rotate(45deg);
-                opacity: 1;
-                margin-top: -1.9rem;
+                &::before {
+                    transform: rotate(45deg);
+                    opacity: 1;
+                    margin-top: -1.9rem;
+                }
             }
         }
     }

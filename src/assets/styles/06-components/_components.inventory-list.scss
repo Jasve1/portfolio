@@ -67,7 +67,9 @@
     background-image: url('../../images/fantasy_theme_slots.svg');
     box-sizing: border-box;
 
-    &:hover .c-infobox {
-        display: flex;
+    @media #{$non-touch} {
+        &:hover .c-infobox {
+            display: flex;
+        }    
     }
 }

@@ -6,8 +6,10 @@
     width: 100%;
     position: relative;
 
-    &:hover .c-infobox {
-        display: flex;
+    @media #{$non-touch} {
+        &:hover .c-infobox {
+            display: flex;
+        }    
     }
 }
 
