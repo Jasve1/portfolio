@@ -11,23 +11,47 @@ const Projects = ({
         {
             id: "project1",
             title: "Trashpocalypse",
-            img: "",
-            dscrp: "Trashpocalypse is a third-person action rpg puzzle adventure game. The player has to fight monsters made of trash in a post-apocalyptic world while trying to figure out what happened.",
-            roles: ["Game Designer", "Game Developer", "Illustrator"]
+            pages: [
+                {
+                    num: 1,
+                    dscrp: "Trashpocalypse is a third-person action rpg puzzle adventure game. The player has to fight monsters made of trash in a post-apocalyptic world while trying to figure out what happened.",
+                    roles: ["Game Designer", "Game Developer", "Illustrator"],
+                },
+                {
+                    num: 2,
+                    img: ""
+                }
+            ]
         },
         {
             id: "project2",
             title: "3D Oni Sculpture",
-            img: "",
-            dscrp: "",
-            roles: ["Character Designer", "Sculpturere"]
+            pages: [
+                {
+                    num: 1,
+                    dscrp: "",
+                    roles: ["Character Designer", "Sculpturere"],
+                },
+                {
+                    num: 2,
+                    img: ""
+                }
+            ]
         },
         {
             id: "project3",
             title: "Project3",
-            img: "",
-            dscrp: "",
-            roles: [""]
+            pages: [
+                {
+                    num: 1,
+                    dscrp: "",
+                    roles: [""],
+                },
+                {
+                    num: 2,
+                    img: ""
+                }
+            ]
         }
     ];
 

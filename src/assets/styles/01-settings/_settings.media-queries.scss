@@ -7,9 +7,9 @@ $portrait: '#{$screen} and (orientation: portrait)';
 $non-touch: '(hover: hover) and (pointer: fine)';
 $touch-only: '(hover: none) and (pointer: coarse)';
 
-$mobile: '#{$screen} and (max-width: 520px)';
-$tablet-small: '#{$screen} and (max-width: 768px)';
-$tablet-large: '#{$screen} and (max-width: 1024px)';
-$desktop-small: '#{$screen} and (max-width: 1280px)';
+$mobile: '#{$screen} and (max-width: 519px)';
+$tablet-small: '#{$screen} and (max-width: 767px)';
+$tablet-large: '#{$screen} and (max-width: 1023px)';
+$desktop-small: '#{$screen} and (max-width: 1279px)';
 $desktop-only: '#{$screen} and (min-width: 1023px)';
 $big-screen-only: '#{$screen} and (min-width: 1919px)';
