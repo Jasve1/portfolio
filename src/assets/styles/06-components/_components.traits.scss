@@ -34,6 +34,11 @@
     @media #{$mobile} {
         height: calc(95vw * 1.03);
     }
+
+    @media #{$big-screen-only} {
+        height: calc(#{$width_box-xl} * 1.03);
+        width: $width_box-xl;
+    }
 }
 
 .c-traits__list-item {

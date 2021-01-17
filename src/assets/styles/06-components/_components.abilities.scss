@@ -18,6 +18,11 @@
         width: 100%;
         height: calc(95vw * 1.11);
     }
+
+    @media #{$big-screen-only} {
+        height: calc(#{$width_box-l} * 1.11);
+        width: $width_box-l;
+    }
 }
 
 .c-abilities__header {

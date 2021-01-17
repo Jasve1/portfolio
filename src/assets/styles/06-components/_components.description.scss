@@ -5,7 +5,7 @@
 .c-description {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     align-items: center;
 
     @media #{$tablet-large} {
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 5%;
+    margin-bottom: $padding-s;
 
     h2 {
         font-size: $h3-size;

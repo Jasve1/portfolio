@@ -45,6 +45,10 @@
     @media #{$mobile} {
         width: 95vw;
     }
+
+    @media #{$big-screen-only} {
+        width: $width_box-xxxl;
+    }
 }
 
 .o-wrap__section {

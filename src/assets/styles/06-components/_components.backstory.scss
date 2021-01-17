@@ -31,6 +31,10 @@
     @media #{$mobile} {
         height: calc(95vw * 1.15);
     }
+
+    @media #{$big-screen-only} {
+        height: calc(#{$width_box-xxxl} * 0.78);
+    }
 }
 
 .c-backstory__header {

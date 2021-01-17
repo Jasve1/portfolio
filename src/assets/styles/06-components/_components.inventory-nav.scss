@@ -12,14 +12,28 @@
 
 .c-inventory-nav__list {
     display: flex;
-    width: 80%;
+    width: 50%;
+    max-width: $width_box-xl;
 
     .c-inventory-nav__list-item:last-child {
         margin-right: 0;
     }
 
+    @media #{$desktop-small} {
+        width: 60%;
+    }
+
+
+    @media #{$tablet-large} {
+        width: 80%;
+    }
+
     @media #{$tablet-small} {
         width: 90%;
+    }
+
+    @media #{$mobile} {
+        width: 95%;
     }
 }
 

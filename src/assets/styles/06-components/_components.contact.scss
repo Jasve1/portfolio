@@ -44,6 +44,10 @@
     @media #{$mobile} {
         height: calc(95vw * 1.14);
     }
+
+    @media #{$big-screen-only} {
+        height: calc(#{$width_box-xxxl} * 1.14);
+    }
 }
 
 .c-contact__list-item {
