@@ -35,10 +35,13 @@
         left: calc(50vw - (#{$width_elm-xxl} / 2));
 
         &--top-left,
-        &--top-right,
+        &--top-right {
+            top: $spacing-h-s;
+        }
+
         &--bottom-left,
         &--bottom-right {
-            top: $spacing-h-s;
+            bottom: $spacing-h-s;
         }
     }
 
