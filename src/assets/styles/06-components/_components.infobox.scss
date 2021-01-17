@@ -14,17 +14,31 @@
     border: $thick-border $info-border-color;
     box-shadow: -10px 10px 18px 1px rgba(0,0,0,0.36);
 
+    @media #{$touch-only} {
+        &--show {
+            display: flex;
+
+            &::before {
+                content: url("../../images/fantasy_theme_exit.svg");
+                display: block;
+                color: $dark-color;
+                width: $width_elm-s;
+                height: $width_elm-s;
+                position: absolute;
+                top: -2rem;
+                right: -2rem;
+            }
+        }
+    }
+
     @media #{$tablet-large} {
         left: calc(50vw - (#{$width_elm-xxl} / 2));
 
         &--top-left,
-        &--top-right {
-            top: $spacing-h-s;
-        }
-
+        &--top-right,
         &--bottom-left,
         &--bottom-right {
-            bottom: $spacing-h-s;
+            top: $spacing-h-s;
         }
     }
 
