@@ -14,17 +14,12 @@
     z-index: 10;
     transition: ease-in-out 0.3s;
     opacity: 0;
-    padding-top: $spacing-h-l;
     box-sizing: border-box;
 
     &--open {
         animation-name: fadeIn;
         animation-duration: 0.3s;
         opacity: 1;
-    }
-
-    @media #{$tablet-large} {
-        align-items: flex-start;
     }
 }
 
@@ -49,16 +44,24 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+}
 
-    &::before {
-        content: url("../../images/fantasy_theme_exit.svg");
-        display: block;
-        align-self: flex-end;
-        color: $dark-color;
-        width: $width_elm-s;
-        height: $width_elm-s;
-        margin-right: $spacing-h-s;
-        margin-top: $spacing-h-s;
+.o-modal__exit-button {
+    cursor: pointer;
+    display: block;
+    align-self: flex-end;
+    color: $dark-color;
+    width: $width_elm-s;
+    height: $width_elm-s;
+    position: absolute;
+    top: $spacing-h-s;
+    right: $spacing-h-s;
+
+    @media #{$non-touch} {
+        &:hover {
+            transform: scale(1.2);
+            transition: ease-in-out 0.2s;
+        }
     }
 }
 
