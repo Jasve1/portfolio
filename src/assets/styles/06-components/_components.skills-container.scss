@@ -2,6 +2,10 @@
     06-COMPONENTS/SKILLS-CONTAINER
 ===================================================*/
 
+.c-skills-container {
+    width: 100%;
+}
+
 .c-skills-container__content {
     display: flex;
     width: $res-width_box-xxl;

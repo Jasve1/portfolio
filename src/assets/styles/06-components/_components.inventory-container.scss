@@ -2,6 +2,10 @@
     06-COMPONENTS/INVENTORY-CONTAINER
 ===================================================*/
 
+.c-inventory-container {
+    width: 100%;
+}
+
 .c-inventory-container__content {
     width: $res-width_box-xxl;
     box-sizing: border-box;

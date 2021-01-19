@@ -9,6 +9,7 @@
     cursor: pointer;
     transform: scale(1);
     transition: ease-in-out 0.2s;
+    width: 100%;
 
     @media #{$non-touch} {
         &:hover {
@@ -18,22 +19,29 @@
     }
 }
 
-$header-size: 13rem;
 .c-greetings-button__header {
-    padding-top: 1rem;
     box-sizing: border-box;
     text-align: center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    width: $header-size;
-    height: calc(#{$header-size} * 0.34);
+    width: 100%;
+    height: calc(#{$width_elm-l} * 0.34);
     margin-top: -12%;
     flex: none;
     background-image: url('../../images/fantasy_theme_modal-button-bg.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $padding-m;
 
     h4 {
         font-family: $h1-family;
+    }
+
+    @media #{$mobile} {
+        height: calc(#{$width_elm-m} * 0.34);
+        padding-bottom: $padding-s;
     }
 }
 

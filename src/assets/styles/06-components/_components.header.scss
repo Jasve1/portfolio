@@ -38,6 +38,11 @@
     margin-top: $spacing-h-s;
     margin-bottom:$spacing-h-m;
     cursor: pointer;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
 }
 
 .c-header__text {

@@ -41,8 +41,12 @@ $header-size: 25rem;
 
 .c-greetings__profile-pic {
     margin-top: $spacing-h-s;
-    width: 300px;
+    width: $width_box-s;
     margin-bottom: $padding-m;
+
+    @media #{$mobile} {
+        width: $width_box-xs;
+    }
 }
 
 $header-size: 13rem;
@@ -58,4 +62,9 @@ $header-size: 13rem;
     flex-direction: column;
     justify-content: flex-end;
     margin: 0 auto;
+    width: $width_elm-l;
+
+    @media #{$mobile} {
+        width: $width_elm-m;
+    }
 }
