@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import VizSensor from 'react-visibility-sensor';
+import classnames from 'classnames';
 
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
@@ -10,6 +11,8 @@ import Badges from "./components/badges/Badges";
 import About from "./components/about/About";
 
 const App = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     const [projectsInView, setProjectsInview] = useState(false);
     const [aboutInView, setAboutInview] = useState(false);
     const [contactInView, setContactInview] = useState(false);
@@ -78,8 +81,17 @@ const App = () => {
         }
     };
 
+    useEffect(() => {
+        setIsLoading(false);
+    }, []);
+
+    const wrapClass = classnames('o-wrap', {
+        'loading': isLoading,
+        'done-loading': !isLoading
+    });
+
     return (
-        <div>
+        <div className={wrapClass}>
             <Header shortcutBadge={shortcutBadge}/>
             <main className="o-wrap o-wrap__main">
                 <section  id="top" className="o-wrap o-wrap__section">

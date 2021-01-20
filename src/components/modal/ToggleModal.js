@@ -1,6 +1,5 @@
 import React, { useState, Fragment } from 'react';
 import useStopScroll from '../hooks/useStopScroll';
-import classnames from 'classnames';
 import Modal from './Modal';
 
 const ToggleModal = ({
@@ -37,11 +36,6 @@ const ToggleModal = ({
         }
     };
 
-    const modalClass = classnames('o-modal', {
-        'o-modal--open': openAnimation,
-        'o-modal--close': !openAnimation
-    });
-
     return (
         <Fragment>
             <section className={classBundle} onClick={init(true)} id={id}>
@@ -58,7 +52,7 @@ const ToggleModal = ({
             </section>
             {
                 isOpen &&
-                <Modal modalClass={modalClass} handleClick={init} id={id}>
+                <Modal openAnimation={openAnimation} handleClick={init} id={id}>
                     {children}
                 </Modal>
             }

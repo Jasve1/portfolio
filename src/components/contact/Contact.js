@@ -33,7 +33,7 @@ const Contact = () => {
         <footer className="c-contact">
             <header className="c-contact__header">
                 <div className="c-contact__header-img">
-                    <img src="/assets/images/icons/fantasy_theme_contact-icon.svg" alt="Crystal Ball"/>
+                    <img src="/assets/images/icons/fantasy_theme_contact-icon.svg" alt="Crystal Ball" loading="lazy" />
                 </div>
             </header>
             <ul className="c-contact__content">

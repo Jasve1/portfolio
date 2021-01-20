@@ -13,23 +13,20 @@
     display: flex;
     z-index: 10;
     transition: ease-in-out 0.3s;
-    opacity: 0;
     box-sizing: border-box;
 
-    &--open {
-        animation-name: fadeIn;
+    &--close{
+        animation-name: fadeOut;
         animation-duration: 0.3s;
-        opacity: 1;
     }
 }
 
-@keyframes fadeIn {
+@keyframes fadeOut {
     0% {
-        opacity: 0;
-    }
-
-    100% {
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 

@@ -5,6 +5,11 @@
 .c-contact-type {
     position: relative;
 
+    @media #{$touch-only} {
+        display: flex;
+        justify-content: center;
+    }
+
     @media #{$non-touch} {
         &:hover {
             .c-contact-type__msg {
@@ -24,11 +29,18 @@
 
 .c-contact-type__msg {
     position: absolute;
-    top: 0;
-    left: 0;
     font-family: $h2-family;
     color: $dark-color;
     white-space: nowrap;
-    transform:scale(0) translate(0, 0);
     transition: ease-in-out 0.2s;
+
+    @media #{$touch-only} {
+        bottom: -$padding-m;
+    }
+
+    @media #{$non-touch} {
+        top: 0;
+        left: 0;
+        transform:scale(0) translate(0, 0);
+    }
 }

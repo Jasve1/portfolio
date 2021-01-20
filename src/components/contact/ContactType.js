@@ -11,7 +11,7 @@ const ContactType = ({type}) => {
     return (
         <a href={link} target="_blank" rel="noreferrer" className="c-contact-type" title={title}>
             <div className="c-contact-type__img">
-                <img src={`/assets/images/fantasy_theme_${img}.svg`} alt={title}/>
+                <img src={`/assets/images/fantasy_theme_${img}.svg`} alt={title} loading="lazy" />
             </div>
             <p className={`c-contact-type__msg c-contact-type__msg--${img}`}>{msg}</p>
         </a>

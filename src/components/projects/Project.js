@@ -64,11 +64,11 @@ const Project = ({
             </article>
             <section className="c-project__arrows">
                 <div className={leftArrowClass} onClick={() => changePage('left')}>
-                    <img src={`/assets/images/arrow-left.svg`} alt="Arrow left"/>
+                    <img src={`/assets/images/arrow-left.svg`} alt="Arrow left" loading="lazy" />
                 </div>
                 <h3>{currentPage}/{project.pages.length}</h3>
                 <div className={rightArrowClass} onClick={() => changePage('right')}>
-                    <img src={`/assets/images/arrow-right.svg`} alt="Arrow right"/>
+                    <img src={`/assets/images/arrow-right.svg`} alt="Arrow right" loading="lazy" />
                 </div>
             </section>
         </section>
