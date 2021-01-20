@@ -35,14 +35,19 @@
 }
 
 .c-badge__icon-slot {
-    width: 100%;
+    width: $height_elm-s;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.c-badge__icon-placeholder {
+    width: 100%;
+}
+
 .c-badge__icon {
+    width: 100%;
     position: absolute;
     top:0;
     transform-origin: center;

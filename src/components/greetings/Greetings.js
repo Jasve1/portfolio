@@ -1,29 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classnames from 'classnames';
 import SkillsContainer from "./skills/SkillsContainer";
 import InventoryContainer from "./inventory/InventoryContainer";
 
-const Greetings = () => (
-    <section className="c-greetings">
+const Greetings = () => {
+    const [isLoading, setIsLoading] = useState(true);
 
-        <header className="c-greetings__header">
-            <h1 className="c-greetings__header-name">Jakob Kilias Svenningsen</h1>
-            <h2 className="c-greetings__header-title">Web Developer</h2>
-        </header>
+    const profilePicClass = classnames('c-greetings__profile-pic', {
+        'loading': isLoading,
+        'done-loading': !isLoading
+    });
 
-        <section className="c-greetings__profile-pic">
-            <img src="/assets/images/profile_pic.png" alt="me"/>
-        </section>
+    return (
+        <section className="c-greetings">
 
-        <section className="c-greetings__content">
-            <section className="c-greetings__content-item">
-                <SkillsContainer />
+            <header className="c-greetings__header">
+                <h1 className="c-greetings__header-name">Jakob Kilias Svenningsen</h1>
+                <h2 className="c-greetings__header-title">Web Developer</h2>
+            </header>
+
+            <section className={profilePicClass} onLoad={() => setIsLoading(false)}>
+                <img src="/assets/images/profile_pic.png" alt="me"/>
             </section>
-            <section className="c-greetings__content-item">
-                <InventoryContainer />
-            </section>
-        </section>
 
-    </section>
-);
+            <section className="c-greetings__content">
+                <section className="c-greetings__content-item">
+                    <SkillsContainer />
+                </section>
+                <section className="c-greetings__content-item">
+                    <InventoryContainer />
+                </section>
+            </section>
+
+        </section>
+    );
+};
 
 export default Greetings;

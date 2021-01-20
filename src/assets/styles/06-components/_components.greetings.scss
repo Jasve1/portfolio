@@ -42,10 +42,17 @@ $header-size: 25rem;
 .c-greetings__profile-pic {
     margin-top: $spacing-h-s;
     width: $width_box-s;
+    height: calc(#{$width_box-s} * 1.09);
     margin-bottom: $padding-m;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 
     @media #{$mobile} {
         width: $width_box-xs;
+        height: calc(#{$width_box-xs} * 1.09);
     }
 }
 
