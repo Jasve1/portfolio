@@ -19,6 +19,16 @@
         animation-name: fadeOut;
         animation-duration: 0.3s;
     }
+
+    &--loading {
+        opacity: 0;
+    }
+
+    &--done-loading {
+        opacity: 1;
+        transition: ease-in-out .3s;
+        transition-delay: .2s;
+    }
 }
 
 @keyframes fadeOut {

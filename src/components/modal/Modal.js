@@ -15,8 +15,8 @@ const Modal = ({
 
     const modalClass = classnames('o-modal', {
         'o-modal--close': !openAnimation,
-        'loading': isLoading,
-        'done-loading': !isLoading
+        'o-modal--loading': isLoading,
+        'o-modal--done-loading': !isLoading
     });
 
     return (
