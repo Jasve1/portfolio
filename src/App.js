@@ -11,8 +11,6 @@ import Badges from "./components/badges/Badges";
 import About from "./components/about/About";
 
 const App = () => {
-    const [isLoading, setIsLoading] = useState(true);
-
     const [projectsInView, setProjectsInview] = useState(false);
     const [aboutInView, setAboutInview] = useState(false);
     const [contactInView, setContactInview] = useState(false);
@@ -81,17 +79,8 @@ const App = () => {
         }
     };
 
-    useEffect(() => {
-        setIsLoading(false);
-    }, []);
-
-    const wrapClass = classnames('o-wrap', {
-        'loading': isLoading,
-        'done-loading': !isLoading
-    });
-
     return (
-        <div className={wrapClass}>
+        <div>
             <Header shortcutBadge={shortcutBadge}/>
             <main className="o-wrap o-wrap__main">
                 <section  id="top" className="o-wrap o-wrap__section">

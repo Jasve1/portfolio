@@ -6,16 +6,6 @@
     margin: auto;
 }
 
-.loading {
-    opacity: 0;
-}
-
-.done-loading {
-    opacity: 1;
-    transition: ease-in-out .3s;
-    transition-delay: .3s;
-}
-
 .o-wrap__main {
     width: $width_box-xxl;
 

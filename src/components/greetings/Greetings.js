@@ -6,7 +6,7 @@ import InventoryContainer from "./inventory/InventoryContainer";
 const Greetings = () => {
     const [isLoading, setIsLoading] = useState(true);
 
-    const profilePicClass = classnames('c-greetings__profile-pic', {
+    const lowResClass = classnames('c-greetings__profile-pic--low-res', {
         'loading': isLoading,
         'done-loading': !isLoading
     });
@@ -19,8 +19,9 @@ const Greetings = () => {
                 <h2 className="c-greetings__header-title">Web Developer</h2>
             </header>
 
-            <section className={profilePicClass} onLoad={() => setIsLoading(false)}>
-                <img src="/assets/images/profile_pic.png" alt="me"/>
+            <section className="c-greetings__profile-pic">
+                <img src="/assets/images/profile_pic_low-res.png" alt="low resolution me" className={lowResClass} />
+                <img src="/assets/images/profile_pic.png" alt="me" onLoad={() => setIsLoading(false)} />
             </section>
 
             <section className="c-greetings__content">
