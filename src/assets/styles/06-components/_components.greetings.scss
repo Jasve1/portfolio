@@ -55,7 +55,7 @@ $header-size: 25rem;
 
     @media #{$mobile} {
         width: $width_box-xs;
-        height: calc(#{$width_box-xs} * 1.09);
+        min-height: calc(#{$width_box-xs} * 1.09);
     }
 }
 

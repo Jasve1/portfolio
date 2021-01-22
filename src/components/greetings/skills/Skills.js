@@ -8,14 +8,14 @@ function Skills({type}){
             title: "HTML5",
             name: "html",
             img: "html-icon",
-            descrp: "Bend the DOM to your will.",
+            descrp: "Bend the DOM to your will. With this amazing power you will be able to change the very content of the page.",
             bonus: ["Accessibility", "Semantic HTML"]
         },
         {
             title: "CSS3",
             name: "css",
             img: "css-icon",
-            descrp: "Charm all screen sizes while keeping the specificity points in line.",
+            descrp: "Charm all screen sizes while keeping the specificity points in line. ",
             bonus: ["ITCSS", "BEM"]
         },
         {
