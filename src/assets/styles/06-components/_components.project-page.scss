@@ -1,0 +1,72 @@
+/*==================================================
+    06-COMPONENTS/PROJECT-PAGE
+===================================================*/
+
+.c-project-page {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    &--left {
+        margin-left: 5%;
+        margin-right: auto;
+        align-self: start;
+    }
+
+    &--right {
+        margin-right: 5%;
+        margin-left: auto;
+        align-self: end;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media #{$tablet-large} {
+        width: 35%;
+        height: 75%;
+        margin-top: 5%;
+
+        &--left {
+            margin-left: 12%;
+        }
+    
+        &--right {
+            margin-right: 9%;
+        }
+    }
+}
+
+.c-project-page__header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.c-project-page__article {
+    margin-bottom: 5%;
+}
+
+.c-project-page__role-header {
+    margin-bottom: 5%;
+}
+
+.c-project-page__role-item {
+    @include sword;
+    margin-bottom: 3%;
+}
+
+.c-project-page__slider-wrap{
+    width: 300px;
+    overflow: hidden;
+}
+
+.c-project-page__slide-descrp{
+    text-align: center;
+}

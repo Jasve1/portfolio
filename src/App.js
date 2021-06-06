@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import VizSensor from 'react-visibility-sensor';
-import classnames from 'classnames';
 
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
