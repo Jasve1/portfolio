@@ -12,7 +12,7 @@ const Description = () => {
         },
         {
             title: "Background",
-            content: "Multimedia Designer"
+            content: "Web Development"
         },
         {
             title: "Alignment",
