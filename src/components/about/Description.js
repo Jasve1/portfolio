@@ -8,7 +8,7 @@ const Description = () => {
         },
         {
             title: "Class",
-            content: "Web Developer"
+            content: "Game Design Student"
         },
         {
             title: "Background",

@@ -16,12 +16,12 @@ const Greetings = () => {
 
             <header className="c-greetings__header">
                 <h1 className="c-greetings__header-name">Jakob Kilias Svenningsen</h1>
-                <h2 className="c-greetings__header-title">Web Developer</h2>
+                <h2 className="c-greetings__header-title">Game Design Student</h2>
             </header>
 
             <section className="c-greetings__profile-pic">
-                <img src="/assets/images/profile_pic_low-res.png" alt="low resolution me" className={lowResClass} />
-                <img src="/assets/images/profile_pic.png" alt="me" onLoad={() => setIsLoading(false)} />
+                <img src="/assets/images/profile_pic_low-res.png" width="300" height="333.66" alt="low resolution me" className={lowResClass} />
+                <img src="/assets/images/profile_pic.png" width="300" height="333.66" alt="me" onLoad={() => setIsLoading(false)} />
             </section>
 
             <section className="c-greetings__content">
