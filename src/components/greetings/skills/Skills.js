@@ -5,46 +5,46 @@ function Skills({type}){
 
     const codeSkills = [
         {
-            title: "HTML5",
+            title: "HTML5 and CSS3",
             name: "html",
             img: "html-icon",
-            descrp: "Bend the DOM to your will. With this amazing power you will be able to change the very content of the page.",
-            bonus: ["Accessibility", "Semantic HTML"]
-        },
-        {
-            title: "CSS3",
-            name: "css",
-            img: "css-icon",
-            descrp: "Charm all screen sizes while keeping the specificity points in line. ",
-            bonus: ["ITCSS", "BEM"]
-        },
-        {
-            title: "SCSS",
-            name: "scss",
-            img: "scss-icon",
-            descrp: "Extends your control over the specificity points.",
-            bonus: ["ITCSS", "BEM"]
+            descrp: "Bend the DOM to your will. With this amazing power you will be able to change the very content of the page and charm all screen sizes while keeping the specificity points in line.",
+            bonus: ["Accessibility", "Semantic HTML", "ITCSS", "BEM"]
         },
         {
             title: "JavaScript",
-            name: "js",
+            name: "css",
             img: "js-icon",
             descrp: "",
             bonus: ["DRY", "ES6"]
         },
         {
             title: "ReactJs",
-            name: "react",
+            name: "scss",
             img: "react-icon",
             descrp: "",
             bonus: ["Hooks"]
         },
         {
-            title: "VueJs",
-            name: "vue",
-            img: "vue-icon",
+            title: "C#",
+            name: "js",
+            img: "c-icon",
             descrp: "",
-            bonus: ["Hooks"]
+            bonus: []
+        },
+        {
+            title: "Unity",
+            name: "react",
+            img: "unity-icon",
+            descrp: "",
+            bonus: []
+        },
+        {
+            title: "Processing",
+            name: "vue",
+            img: "p-icon",
+            descrp: "",
+            bonus: []
         }
     ];
 
