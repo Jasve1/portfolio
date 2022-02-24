@@ -54,35 +54,35 @@ function Skills({type}){
             name: "photoshop",
             img: "photoshop-icon",
             descrp: "Bend reality.",
-            bonus: [""]
+            bonus: []
         },
         {
             title: "Adobe Illustrator",
             name: "illustrator",
             img: "illustrator-icon",
             descrp: "Create something from nothing.",
-            bonus: [""]
+            bonus: []
         },
         {
             title: "Adobe InDesign",
             name: "indesign",
             img: "indesign-icon",
             descrp: "Alter legendary documents.",
-            bonus: [""]
+            bonus: []
         },
         {
             title: "Adobe After Effects",
             name: "after-effects",
             img: "after-effects-icon",
             descrp: "Control your own world.",
-            bonus: [""]
+            bonus: []
         },
         {
             title: "Blender",
             name: "blender",
             img: "blender-icon",
             descrp: "Master the 3D space.",
-            bonus: [""]
+            bonus: []
         }
     ];
 
