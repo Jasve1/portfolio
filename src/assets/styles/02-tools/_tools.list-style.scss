@@ -7,10 +7,13 @@
     list-style: none;
 
     &:before {
-        content: url('../../images/sword_bulletpoint.svg');
+        content: "";
+        background-image: url('../../images/sword_bulletpoint.svg');
+        background-size: 100%;
         display: flex;
         align-items: center;
         width: $h2-size;
+        height: 0.8rem;
         margin-right: $padding-xs;
         flex: none;
     }

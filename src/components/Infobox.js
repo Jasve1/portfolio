@@ -13,7 +13,7 @@ const Infobox = ({data, list, view, show}) => {
             </header>
             <section className="c-infobox__content">
                 <div className="c-infobox__img">
-                    <img src={`/assets/images/fantasy_theme_${data.img}.svg`} alt={data.title} loading="lazy"/>
+                    <img src={`/assets/images/fantasy_theme_${data.img}.svg`} alt={data.title} />
                 </div>
                 <section className="c-infobox__text">
                     <p>{data.descrp}</p>

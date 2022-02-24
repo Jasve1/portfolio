@@ -15,10 +15,10 @@ const Badge = ({badge}) => {
         <article onMouseOver={() => setSeen(true)} className={badgeClass} onClick={() => setShowInfo(!showInfo)}>
             <section className="c-badge__icon-slot">
                 <div className="c-badge__icon-placeholder">
-                    <img src="/assets/images/fantasy_theme_default-badge.svg" alt="Badge icon placeholder" loading="lazy" />
+                    <img src="/assets/images/fantasy_theme_default-badge.svg" alt="Badge icon placeholder" />
                 </div>
                 <div className="c-badge__icon">
-                    <img src={`/assets/images/fantasy_theme_${badge.img}.svg`} alt={badge.title} loading="lazy" />
+                    <img src={`/assets/images/fantasy_theme_${badge.img}.svg`} alt={badge.title} />
                 </div>
             </section>
             <Infobox data={badge} view="bottom-left" show={showInfo} />

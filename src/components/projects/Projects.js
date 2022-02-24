@@ -18,7 +18,7 @@ const Projects = ({
         <section className="c-projects">
             <header className="c-projects__header">
                 <div className="c-projects__header-img">
-                    <img src="/assets/images/icons/fantasy_theme_projects-icon.svg" alt="Shield and swords" loading="lazy" />
+                    <img src="/assets/images/icons/fantasy_theme_projects-icon.svg" alt="Shield and swords" />
                 </div>
             </header>
             <ul className="c-projects__list">
