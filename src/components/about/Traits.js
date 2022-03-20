@@ -4,7 +4,7 @@ const Traits = () => {
     const traits = [
         {
             title: "Personal Traits",
-            content: "Sometimes I hope the villan wins just so I can see what would happen."
+            content: "I am primarily driven by curiosity."
         },
         {
             title: "Ideals",

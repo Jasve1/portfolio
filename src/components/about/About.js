@@ -1,7 +1,6 @@
 import React from 'react';
 import Description from "./Description";
 import Traits from "./Traits";
-import Backstory from "./Backstory";
 import Abilities from "./Abilities";
 
 const About = () => (
@@ -17,7 +16,6 @@ const About = () => (
                 <Traits/>
                 <Abilities/>
             </section>
-            <Backstory/>
         </section>
     </section>
 );
