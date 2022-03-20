@@ -3,70 +3,116 @@
 ===================================================*/
 
 .c-project-page {
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    @media #{$tablet-large} {
+        width: 35%;
+    }
 
     h4 {
         font-size: 1.1rem;
     }
 
     &--left {
-        margin-left: 5%;
-        margin-right: auto;
+        padding: 0 7% 0 3%;
         align-self: start;
+
+        @media #{$tablet-large} {
+            padding: 4% 7% 0 8%;
+        }
     }
 
     &--right {
-        margin-right: 5%;
-        margin-left: auto;
+        padding: 0 3% 0 7%;
         align-self: end;
         justify-content: center;
         align-items: center;
+
+        @media #{$tablet-large} {
+            padding: 0px 8% 0 7%;
+        }
     }
 
-    @media #{$tablet-large} {
-        width: 35%;
-        height: 75%;
+    &__header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    &__article {
+        margin-bottom: 5%;
+    }
+
+    &__role-header {
+        margin-bottom: 5%;
+    }
+
+    &__role-item {
+        @include sword;
+        margin-bottom: 3%;
+    }
+
+    &__slider-wrap{
+        width: 500px;
+        overflow: hidden;
+        position: relative;
+
+        @media #{$tablet-small} {
+            width: 300px;
+        }
+    }
+
+    &__slider{
+        display: flex;
+    }
+
+    &__slide-item{
+        list-style: none;
+        flex: none;
+    }
+
+    &__slide-descrp{
+        text-align: center;
         margin-top: 5%;
+    }
 
-        &--left {
-            margin-left: 12%;
-        }
-    
+    &__slide-img{
+        width: 70%;
+        margin: auto;
+    }
+
+    &__arrow {
+        height: auto;
+        width: calc(3rem * 1.1);
+        opacity: 0.5;
+        flex: none;
+        position: absolute;
+        top: 25%;
+        transform: scale(0.8);
+
         &--right {
-            margin-right: 9%;
+            align-self: flex-end;
+            right: 0;
+        }
+        &--left {
+            align-self: flex-start;
+            left: 0;
+        }
+        &--active {
+            opacity: 1;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+    
+            @media #{$non-touch} {
+                &:hover {
+                    transform: scale(1);
+                }
+            }
         }
     }
-}
-
-.c-project-page__header {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-
-.c-project-page__article {
-    margin-bottom: 5%;
-}
-
-.c-project-page__role-header {
-    margin-bottom: 5%;
-}
-
-.c-project-page__role-item {
-    @include sword;
-    margin-bottom: 3%;
-}
-
-.c-project-page__slider-wrap{
-    width: 300px;
-    overflow: hidden;
-}
-
-.c-project-page__slide-descrp{
-    text-align: center;
 }

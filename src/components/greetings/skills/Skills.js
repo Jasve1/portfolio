@@ -9,42 +9,42 @@ function Skills({type}){
             name: "html",
             img: "html-icon",
             descrp: "Bend the DOM to your will. With this amazing power you will be able to change the very content of the page and charm all screen sizes while keeping the specificity points in line.",
-            bonus: ["Accessibility", "Semantic HTML", "ITCSS", "BEM"]
+            bonus: ["+2 CHA"]
         },
         {
             title: "JavaScript",
             name: "css",
             img: "js-icon",
-            descrp: "",
-            bonus: ["DRY", "ES6"]
+            descrp: "Gain the power of complete freedom where only your imagination sets the limit.",
+            bonus: ["+1 DEX", "+2 WIS"]
         },
         {
             title: "ReactJs",
             name: "scss",
             img: "react-icon",
-            descrp: "",
-            bonus: ["Hooks"]
+            descrp: "Master the power of components each with their own state to unlock to unlimited potential of the virtual DOM.",
+            bonus: ["+1 INT", "+2 WIS"]
         },
         {
             title: "C#",
             name: "js",
             img: "c-icon",
-            descrp: "",
-            bonus: []
+            descrp: "Explore the power of concepts from the physical world in the digital world.",
+            bonus: ["+3 INT"]
         },
         {
             title: "Unity",
             name: "react",
             img: "unity-icon",
-            descrp: "",
-            bonus: []
+            descrp: "Create imaginary world using your mind.",
+            bonus: ["+2 INT", "+2 CHA"]
         },
         {
             title: "Processing",
             name: "vue",
             img: "p-icon",
-            descrp: "",
-            bonus: []
+            descrp: "Become the artist you always knew you were.",
+            bonus: ["+3 CHA"]
         }
     ];
 
@@ -54,35 +54,35 @@ function Skills({type}){
             name: "photoshop",
             img: "photoshop-icon",
             descrp: "Bend reality.",
-            bonus: []
+            bonus: ["+2 CHA", "+1 STR"]
         },
         {
             title: "Adobe Illustrator",
             name: "illustrator",
             img: "illustrator-icon",
             descrp: "Create something from nothing.",
-            bonus: []
+            bonus: ["+1 CHA", "+2 DEX"]
         },
         {
             title: "Adobe InDesign",
             name: "indesign",
             img: "indesign-icon",
             descrp: "Alter legendary documents.",
-            bonus: []
+            bonus: ["+2 STR", "+1 CHA"]
         },
         {
             title: "Adobe After Effects",
             name: "after-effects",
             img: "after-effects-icon",
             descrp: "Control your own world.",
-            bonus: []
+            bonus: ["+3 STR", "+1 DEX"]
         },
         {
             title: "Blender",
             name: "blender",
             img: "blender-icon",
             descrp: "Master the 3D space.",
-            bonus: []
+            bonus: ["+4 STR", "+1 INT"]
         }
     ];
 
