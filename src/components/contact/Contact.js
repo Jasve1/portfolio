@@ -4,10 +4,10 @@ import ContactType from "./ContactType";
 const Contact = () => {
     const contactTypes = [
         {
-            title: "Instagram",
-            msg: "Visit my Instagram account!",
-            link: "https://www.instagram.com/jakobkilias/",
-            img: "instagram"
+            title: "Github",
+            msg: "Visit my Github account!",
+            link: "https://github.com/Jasve1",
+            img: "github"
         },
         {
             title: "LinkedIn",
