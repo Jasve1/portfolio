@@ -7,13 +7,15 @@ export const PROJECTS = [
                 num: 1,
                 dscrp: 'Space Crash is an infinite runner meets Space Invaders meets Cell Damage that I made in Unity. All the 3D meshes I made in Blender and for the background I used a free asset made by Dogmatic. I created the game out of frustration for this whole corona situation. I just wanted to destroy stuff and was inspired by the feeling of senseless destruction that is also present in a game like Cell Damage or GTA. The spiders in the game represent all the bad thoughts in my brain.',
                 roles: ['Game Design', 'Game Development', '3D Modeling', 'UI Design'],
+                link: 'https://jasve1.itch.io/ultra-sonic-space-crash-3000'
             },
             {
                 num: 2,
                 gallery: [
                     {
-                        imgSrcHR: 'space_crash_img1.png',
+                        imgSrcHR: 'space_crash_img1.gif',
                         imgSrcLR: '',
+                        frame: 'gif_frame.png',
                         alt: 'Scene from Space Crash',
                         descrp: 'When you hit the spiders with your laser cannon they will be pushed back and if you hit them enough times they explode into small squares. This feedback is to give you the feeling of really hitting and destroying something.'
                     },
@@ -30,8 +32,9 @@ export const PROJECTS = [
                         descrp: 'The score is displayed in the top right corner and on the “level completed” screen in the end so you know how many spiders you destroyed.'
                     },
                     {
-                        imgSrcHR: 'space_crash_img4.png',
+                        imgSrcHR: 'space_crash_img4.gif',
                         imgSrcLR: '',
+                        frame: 'gif_frame.png',
                         alt: 'Scene from Space Crash',
                         descrp: 'If you run into the spiders the camera shakes violently to put emphasis on the fact that you crashed.'
                     }
@@ -80,7 +83,7 @@ export const PROJECTS = [
             {
                 num: 1,
                 dscrp: 'For a school assignment I had to create an app for a cooling plant with 4 tanks focusing on Donald Norman’s Design Principles. The app is meant to be operated by an engineer while she walks around the plant.',
-                roles: ['UI Design', 'UX'],
+                roles: ['UI Design', 'UX']
             },
             {
                 num: 2,

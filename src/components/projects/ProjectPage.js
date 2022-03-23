@@ -19,6 +19,14 @@ const ProjectPage = ({title, content}) => {
                     ))}
                 </ul>
             </article>
+            {
+                content.link &&
+                <a href={content.link} target="_blank" rel="noreferrer" className="c-project-page__link" title="Play game">
+                    <div className="c-project-page__link-img">
+                        <img src={`/assets/images/fantasy_theme_play.svg`} alt="Play" />
+                    </div>
+                </a>
+            }
             <article className="c-project-page__article">
                 <h4>Project Description:</h4>
                 <p>{content.dscrp}</p>
@@ -47,19 +55,31 @@ const ProjectPage = ({title, content}) => {
         'c-project-page__arrow--active': currentPage < numOfSlides
     });
 
+    const renderSlideButton = (className, direction) => (
+        <div className={className} onClick={() => changePage(direction)}>
+            <img src={`/assets/images/arrow-${direction}.svg`} alt={`Arrow ${direction}`} />
+        </div>
+    );
+
     const pageTwo = () => (
         <section className="c-project-page c-project-page--right">
             <div className="c-project-page__slider-wrap">
-                <div className={leftArrowClass} onClick={() => changePage('left')}>
-                    <img src={`/assets/images/arrow-left.svg`} alt="Arrow left" />
-                </div>
-                <div className={rightArrowClass} onClick={() => changePage('right')}>
-                    <img src={`/assets/images/arrow-right.svg`} alt="Arrow right" />
-                </div>
+                {
+                    content.gallery.length > 1 &&
+                    renderSlideButton(leftArrowClass, 'left')
+                }
+                {
+                    content.gallery.length > 1 &&
+                    renderSlideButton(rightArrowClass, 'right')
+                }
                 <ul className="c-project-page__slider" style={{"width" : `${slideWidth * content.gallery.length}px`, "margin-left" : `-${slideWidth * currentPage}px`}}>
                     {content.gallery.map((img) => (
                         <li className="c-project-page__slide-item" style={{"width" : `${slideWidth}px`}}>
                             <div className="c-project-page__slide-img">
+                                {
+                                    img.frame &&
+                                    <img src={`/assets/images/${img.frame}`} alt="Frame" className="c-project-page__img-frame" />
+                                }
                                 <img src={`/assets/images/${img.imgSrcHR}`} alt={img.alt} />
                             </div>
                             <p className="c-project-page__slide-descrp">{img.descrp}</p>
