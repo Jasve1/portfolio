@@ -1,12 +1,12 @@
 export const PROJECTS = [
-    /*{
+    {
         id: 'project5',
         title: 'The Great Oaks',
         subTitle: 'by GWD Team 8',
         pages: [
             {
                 num: 1,
-                dscrp: 'A Making Games project.',
+                dscrp: 'A game made for the course Game World Design in the Games program at the IT University of Copenhagen.',
                 roles: ['Character Design', 'UI Design', 'Art'],
                 collab: ['Adam Saidane', 'Beatriz Sá', 'Naya Al Tahan', 'Pedro Rainha', 'Tobias Nielsen', 'Zenan Wu'],
                 link: 'https://barrythecoolbee.itch.io/the-great-oaks'
@@ -15,27 +15,39 @@ export const PROJECTS = [
                 num: 2,
                 gallery: [
                     {
-                        imgSrcHR: 'the_guardener_img1.png',
+                        imgSrcHR: 'the_great_oaks_img1.png',
                         imgSrcLR: '',
                         alt: 'Strategy Mode',
-                        descrp: 'Character design - sketch'
+                        descrp: 'Character design - in the game'
                     },
                     {
-                        imgSrcHR: 'the_guardener_img2.png',
+                        imgSrcHR: 'the_great_oaks_img2.png',
                         imgSrcLR: '',
                         alt: 'Combat Mode',
                         descrp: 'Character design - 3D model'
                     },
                     {
-                        imgSrcHR: 'the_guardener_img3.png',
+                        imgSrcHR: 'the_great_oaks_img3.png',
                         imgSrcLR: '',
                         alt: 'Menu',
-                        descrp: 'Character design - in the game'
+                        descrp: 'Character design - sketch'
+                    },
+                    {
+                        imgSrcHR: 'the_great_oaks_img4.png',
+                        imgSrcLR: '',
+                        alt: 'Menu',
+                        descrp: 'Environment design - The Abandoned House'
+                    },
+                    {
+                        imgSrcHR: 'the_great_oaks_img5.png',
+                        imgSrcLR: '',
+                        alt: 'Menu',
+                        descrp: 'UI - Character selection'
                     }
                 ]
             }
         ]
-    },*/
+    },
     {
         id: 'project4',
         title: 'The Guardener',
