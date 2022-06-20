@@ -57,7 +57,7 @@ const Badges = ({
         if (!show && numAchieved > 0) {
             setShowNum(true);
         }
-    }, [numAchieved]);
+    }, [numAchieved, show]);
 
     const trophyClass = classnames('c-badges__trophy', {
         'c-badges__trophy--show': show,

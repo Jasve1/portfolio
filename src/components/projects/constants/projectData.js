@@ -1,7 +1,81 @@
 export const PROJECTS = [
+    /*{
+        id: 'project5',
+        title: 'The Great Oaks',
+        subTitle: 'by GWD Team 8',
+        pages: [
+            {
+                num: 1,
+                dscrp: 'A Making Games project.',
+                roles: ['Character Design', 'UI Design', 'Art'],
+                collab: ['Adam Saidane', 'Beatriz Sá', 'Naya Al Tahan', 'Pedro Rainha', 'Tobias Nielsen', 'Zenan Wu'],
+                link: 'https://barrythecoolbee.itch.io/the-great-oaks'
+            },
+            {
+                num: 2,
+                gallery: [
+                    {
+                        imgSrcHR: 'the_guardener_img1.png',
+                        imgSrcLR: '',
+                        alt: 'Strategy Mode',
+                        descrp: 'Character design - sketch'
+                    },
+                    {
+                        imgSrcHR: 'the_guardener_img2.png',
+                        imgSrcLR: '',
+                        alt: 'Combat Mode',
+                        descrp: 'Character design - 3D model'
+                    },
+                    {
+                        imgSrcHR: 'the_guardener_img3.png',
+                        imgSrcLR: '',
+                        alt: 'Menu',
+                        descrp: 'Character design - in the game'
+                    }
+                ]
+            }
+        ]
+    },*/
+    {
+        id: 'project4',
+        title: 'The Guardener',
+        subTitle: 'by Safe Space*',
+        pages: [
+            {
+                num: 1,
+                dscrp: 'This was a game made for the course Making Games in the Games program at the IT University of Copenhagen. The game is a take on the tower defense genre where the player is an active agent in defending instead of the classic structure of just waiting for the wave to be over. The theme of the game is inspired by organic gardening with some magic elements where the player has to defend their garden from unwanted pests.',
+                roles: ['QA', 'Art Direction', 'UI Design', 'UX'],
+                collab: ['Lior Maynard', 'Kelsey Lyn Adsitt', 'Jesper Jeppe Rabjerg', 'Alexander Quaade Sørensen', 'Jonas Schartau Gross']
+            },
+            {
+                num: 2,
+                gallery: [
+                    {
+                        imgSrcHR: 'the_guardener_img1.png',
+                        imgSrcLR: '',
+                        alt: 'Strategy Mode',
+                        descrp: 'There are two modes in the game where the first mode is the strategy mode. In this mode the player places the defensive objects and plans out how best to defend their crops. The player can also invest in crops that give them extra materials to build better defensive objects or plants that can heal the player character.'
+                    },
+                    {
+                        imgSrcHR: 'the_guardener_img2.png',
+                        imgSrcLR: '',
+                        alt: 'Combat Mode',
+                        descrp: 'The second mode is the defend mode. In this mode the pests come in waves and try to eat the players crops, attack the house and attack the player character. If either the player character dies or the house is destroyed it is game over.'
+                    },
+                    {
+                        imgSrcHR: 'the_guardener_img3.png',
+                        imgSrcLR: '',
+                        alt: 'Menu',
+                        descrp: 'The style of the UI is inspired by Cletic symbols and shapes found in nature. The visual style of the UI needed to be simplistic as the structure of the UI could quickly get complex in this game but it also needed to convey some of the magical mood of the game.'
+                    }
+                ]
+            }
+        ]
+    },
     {
         id: 'project1',
         title: 'Space Crash',
+        subTitle: 'by Jakob Kilias Svenningsen',
         pages: [
             {
                 num: 1,
@@ -45,6 +119,7 @@ export const PROJECTS = [
     {
         id: 'project2',
         title: '3D Oni Sculpture',
+        subTitle: 'by Jakob Kilias Svenningsen',
         pages: [
             {
                 num: 1,
@@ -79,6 +154,7 @@ export const PROJECTS = [
     {
         id: 'project3',
         title: 'Cooling Plant App',
+        subTitle: 'by Jakob Kilias Svenningsen',
         pages: [
             {
                 num: 1,

@@ -44,12 +44,22 @@
         margin-bottom: 5%;
     }
 
-    &__article {
+    &__section {
+        display: flex;
         margin-bottom: 2.5%;
     }
 
+    &__article {
+        margin-bottom: 2.5%;
+
+        &--team {
+            width: 47.5%;
+            margin-right: 2.5%;
+        }
+    }
+
     &__role-header {
-        margin-bottom: 2%;
+        margin-bottom: 6%;
     }
 
     &__role-item {

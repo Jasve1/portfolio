@@ -80,7 +80,7 @@ const Project = ({
                 callBack={callBack}
                 id={project.id}
                 title={project.title}
-                subTitle="By Jakob Kilias Svenningsen"
+                subTitle={project.subTitle}
                 classBundle={projectButtonClass}
                 customeClass="c-project-button"
             >

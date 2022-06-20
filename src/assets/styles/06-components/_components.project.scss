@@ -37,6 +37,7 @@
 
     &--viewed {
         position: relative;
+        opacity: .7;
 
         &::before {
             content: url('../../images/fantasy_theme_check.svg');
@@ -56,6 +57,9 @@
     }
     &--project4 {
         background-image: url('../../images/fantasy_theme_project4.svg');
+    }
+    &--project5 {
+        background-image: url('../../images/fantasy_theme_project5.svg');
     }
 }
 
@@ -87,6 +91,9 @@
     }
     &--project4 {
         background-image: url('../../images/fantasy_theme_projects4_bg.svg');
+    }
+    &--project5 {
+        background-image: url('../../images/fantasy_theme_projects5_bg.svg');
     }
 
     @media #{$tablet-large} {

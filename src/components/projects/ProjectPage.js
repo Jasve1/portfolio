@@ -9,16 +9,31 @@ const ProjectPage = ({title, content}) => {
             <header className="c-project-page__header">
                 <h3>{title}</h3>
             </header>
-            <article className="c-project-page__article">
-                <h4 className="c-project-page__role-header">What I worked with:</h4>
-                <ul className="c-project-page__role-list">
-                    {content.roles.map((role) => (
-                        <li className="c-project-page__role-item">
-                            <p>{role}</p>
-                        </li>
-                    ))}
-                </ul>
-            </article>
+            <section className="c-project-page__section">
+                {
+                    content.collab &&
+                    <article className="c-project-page__article c-project-page__article--team">
+                        <h4 className="c-project-page__role-header">My Teammates:</h4>
+                        <ul className="c-project-page__role-list">
+                            {content.collab.map((teammate) => (
+                                <li className="c-project-page__role-item">
+                                    <p>{teammate}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </article>
+                }
+                <article className="c-project-page__article">
+                    <h4 className="c-project-page__role-header">What I Worked On:</h4>
+                    <ul className="c-project-page__role-list">
+                        {content.roles.map((role) => (
+                            <li className="c-project-page__role-item">
+                                <p>{role}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </article>
+            </section>
             {
                 content.link &&
                 <a href={content.link} target="_blank" rel="noreferrer" className="c-project-page__link" title="Play game">
