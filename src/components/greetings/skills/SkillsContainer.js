@@ -14,8 +14,8 @@ const SkillsContainer = () => (
             <section className="c-skills-container__content o-modal__content">
                 <article className="c-skills-container__description">
                     <h3>Skill Tree</h3>
-                    <p>Through my work I have accuired many skills in with different tools and technologies.</p>
-                    <p>These are the once that I have the most experience with.</p>
+                    <p>Through my work I have acquired many skills with different tools and technologies.</p>
+                    <p>These are the ones that I have the most experience with.</p>
                 </article>
                 <Skills type="design"/>
                 <Skills type="code"/> 

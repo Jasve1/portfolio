@@ -15,13 +15,13 @@ const Badges = ({
         {
             title: "Hope you've enjoyed the show",
             img: "trophy-badge",
-            descrp: "You have been through it all. You have travelt with me through thick and thin and nothing has led you astray from this noble quest. None deserve this badge more so than you.",
+            descrp: "You have been through it all. You have traveled with me through thick and thin and nothing has led you astray from this noble quest. None deserve this badge more so than you.",
             achieved: trophyBadge
         },
         {
             title: "Champion",
             img: "all-projects-badge",
-            descrp: "None can disclaim the magnitute of this heroic deed. You have sat through all of my presentations and can now proclaim yourself a true champion for which I grant you this badge.",
+            descrp: "None can disclaim the magnitude of this heroic deed. You have sat through all of my presentations and can now proclaim yourself a true champion for which I grant you this badge.",
             achieved: allProjectsBadge
         },
         {
@@ -33,7 +33,7 @@ const Badges = ({
         {
             title: "Warrior",
             img: "first-project-badge",
-            descrp: "Like a true warrior you have fought your way through a presentation of one of my project. Though your journey is yet to be over you still dicerve some praise. I award you this badge, wear it with honour.",
+            descrp: "Like a true warrior you have fought your way through a presentation of one of my project. Though your journey is yet to be over you still deserve some praise. I award you this badge, wear it with honour.",
             achieved: firstProjectBadge
         },
         {

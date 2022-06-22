@@ -22,7 +22,7 @@ function Skills({type}){
             title: "ReactJs",
             name: "scss",
             img: "react-icon",
-            descrp: "Master the power of components each with their own state to unlock to unlimited potential of the virtual DOM.",
+            descrp: "Master the power of components each with their own state to unlock the unlimited potential of the virtual DOM.",
             bonus: ["+1 INT", "+2 WIS"]
         },
         {
@@ -36,7 +36,7 @@ function Skills({type}){
             title: "Unity",
             name: "react",
             img: "unity-icon",
-            descrp: "Create imaginary world using your mind.",
+            descrp: "Create imaginary worlds using your mind.",
             bonus: ["+2 INT", "+2 CHA"]
         },
         {

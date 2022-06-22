@@ -16,7 +16,7 @@ const Inventory = () => {
             img: "accessibility",
             alt: "Great Axe",
             category: "Best Practice",
-            descrp: "This axe can be wielded by anyone and you will always hear, see or feel it coming."
+            descrp: "This ax can be wielded by anyone and you will always hear, see or feel it coming."
         },
         {
             title: "The Book of Norman",
@@ -44,7 +44,7 @@ const Inventory = () => {
             img: "semantic-html",
             alt: "A bow that can fire three arrows each with a unique purpose.",
             category: "Best Practice",
-            descrp: "This bow has arrows for spicific purposes. Be sure to use them for the correct one or they will work against you."
+            descrp: "This bow has arrows for specific purposes. Be sure to use them for the correct one or they will work against you."
         },
         {
             title: "Helm of Specificity Peace",
@@ -58,7 +58,7 @@ const Inventory = () => {
             img: "design-thinking",
             alt: "An Amulet",
             category: "Design",
-            descrp: "This amulet help guide you in the right direction."
+            descrp: "This amulet helps guide you in the right direction."
         },
         {
             title: "Sword of DRY",

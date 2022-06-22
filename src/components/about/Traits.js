@@ -8,7 +8,7 @@ const Traits = () => {
         },
         {
             title: "Ideals",
-            content: "We all have a responsibility to be the best version of ourselfs."
+            content: "We all have a responsibility to be the best version of ourselves."
         },
         {
             title: "Bonds",
@@ -16,7 +16,7 @@ const Traits = () => {
         },
         {
             title: "Flaws",
-            content: "I need too feel like I am doing something meaningfull to stay motivated."
+            content: "I need to feel like I am doing something meaningful to stay motivated."
         }
     ];
 

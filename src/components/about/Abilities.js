@@ -8,7 +8,7 @@ const Abilities = () => {
         },
         {
             title: 'Art',
-            content: 'Adept in painting with acrylics and water color.'
+            content: 'Adept in painting with acrylics and watercolour.'
         },
         {
             title: 'Terrain',
