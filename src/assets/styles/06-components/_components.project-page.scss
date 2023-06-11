@@ -72,6 +72,21 @@
         overflow: hidden;
         position: relative;
 
+        &--enlarged {
+            width: 60vw;
+            height: 96vh;
+            margin: auto;
+            overflow: hidden;
+            position: fixed;
+            top: 2vh;
+            left: 20vw;
+
+            @media #{$tablet-small} {
+                width: 90vw;
+                left: 5vw;
+            }
+        }
+
         @media #{$tablet-small} {
             width: 300px;
         }
@@ -79,6 +94,8 @@
 
     &__slider{
         display: flex;
+        align-items: center;
+        height: 100%;
     }
 
     &__slide-item{
@@ -87,14 +104,30 @@
     }
 
     &__slide-descrp{
-        text-align: center;
+        text-align: justify;
+        margin: auto;
         margin-top: 5%;
+        max-width: 70%;
     }
 
     &__slide-img{
-        width: 70%;
+        max-width: 70%;
+        height: 100%;
         margin: auto;
         position: relative;
+        display: flex;
+    }
+
+    &__img--gif {
+        padding: 14px 17px 10px 17px;
+
+        @media #{$tablet-small} {
+            padding: 8px 0px 8px 0px;
+        }
+
+        @media #{$mobile} {
+            padding: 5px 0px 5px 0px;
+        }
     }
 
     &__img-frame {
@@ -107,7 +140,7 @@
         opacity: 0.5;
         flex: none;
         position: absolute;
-        top: 25%;
+        top: 45%;
         transform: scale(0.8);
 
         &--right {
@@ -131,13 +164,66 @@
         }
     }
 
+    &__expand-retract {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0000004d;
+        opacity: 0;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+
+        @media #{$non-touch} {
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__expand-retract-img {
+        position: relative;
+        width: 20%;
+        margin: auto;
+    }
+
     &__link {
         width: 45px;
-        margin-bottom: 2.5%;
-        align-self: flex-end;
+        margin-top: 4%;
         transition: ease-in-out 0.2s;
         &:hover {
             transform: scale(1.2);
+        }
+
+        @media #{$non-touch} {
+            &:hover {
+                .c-project-page__msg {
+                    transform:scale(1) translate(0, 50px);
+                }
+            }    
+        }
+    }
+
+    &__msg {
+        position: absolute;
+        font-family: $h2-family;
+        color: $dark-color;
+        white-space: nowrap;
+        transition: ease-in-out 0.2s;
+    
+        @media #{$touch-only} {
+            bottom: -$padding-m;
+        }
+    
+        @media #{$non-touch} {
+            top: 0;
+            left: 0;
+            transform:scale(0) translate(0, 0);
         }
     }
 }

@@ -61,6 +61,9 @@
     &--project5 {
         background-image: url('../../images/fantasy_theme_project5.svg');
     }
+    &--project6 {
+        background-image: url('../../images/fantasy_theme_project6.svg');
+    }
 }
 
 .c-project-button__header {
@@ -94,6 +97,9 @@
     }
     &--project5 {
         background-image: url('../../images/fantasy_theme_projects5_bg.svg');
+    }
+    &--project6 {
+        background-image: url('../../images/fantasy_theme_projects6_bg.svg');
     }
 
     @media #{$tablet-large} {

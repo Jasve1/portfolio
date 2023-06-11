@@ -3,6 +3,7 @@ import classnames from 'classnames';
 
 const ProjectPage = ({title, content}) => {
     const [currentPage, setCurrentPage] = useState(0);
+    const [imgEnlarged, setimgEnlarged] = useState(false);
 
     const pageOne = () => (
         <section className="c-project-page c-project-page--left">
@@ -34,22 +35,25 @@ const ProjectPage = ({title, content}) => {
                     </ul>
                 </article>
             </section>
+            <article className="c-project-page__article">
+                <h4>Project Description:</h4>
+                <p>{content.dscrp}</p>
+            </article>
             {
                 content.link &&
                 <a href={content.link} target="_blank" rel="noreferrer" className="c-project-page__link" title="Play game">
                     <div className="c-project-page__link-img">
                         <img src={`/assets/images/fantasy_theme_play.svg`} alt="Play" />
                     </div>
+                    <p className="c-project-page__msg">Download game here!</p>
                 </a>
             }
-            <article className="c-project-page__article">
-                <h4>Project Description:</h4>
-                <p>{content.dscrp}</p>
-            </article>
         </section>
     );
 
-    const slideWidth = window.innerWidth > 767 ? 500 : 300;
+    const responsiveSlideWidth = window.innerWidth > 767 ? 500 : 300;
+    const fullSlideWidth = window.innerWidth > 767 ? window.innerWidth * 0.6 : window.innerWidth * 0.9;
+    const slideWidth = imgEnlarged ? fullSlideWidth : responsiveSlideWidth;
     const numOfSlides = content.gallery ? content.gallery.length - 1 : 0;
 
     const changePage = (direction) => {
@@ -78,7 +82,7 @@ const ProjectPage = ({title, content}) => {
 
     const pageTwo = () => (
         <section className="c-project-page c-project-page--right">
-            <div className="c-project-page__slider-wrap">
+            <div className={`c-project-page__slider-wrap${imgEnlarged ? "--enlarged" : ""}`}>
                 {
                     content.gallery.length > 1 &&
                     renderSlideButton(leftArrowClass, 'left')
@@ -90,14 +94,20 @@ const ProjectPage = ({title, content}) => {
                 <ul className="c-project-page__slider" style={{"width" : `${slideWidth * content.gallery.length}px`, "margin-left" : `-${slideWidth * currentPage}px`}}>
                     {content.gallery.map((img) => (
                         <li className="c-project-page__slide-item" style={{"width" : `${slideWidth}px`}}>
-                            <div className="c-project-page__slide-img">
+                            <div className="c-project-page__slide-img" onClick={() => setimgEnlarged(!imgEnlarged)}>
                                 {
                                     img.frame &&
                                     <img src={`/assets/images/${img.frame}`} alt="Frame" className="c-project-page__img-frame" />
                                 }
-                                <img src={`/assets/images/${img.imgSrcHR}`} alt={img.alt} />
+                                <img src={`/assets/images/${img.imgSrcHR}`} className={`c-project-page__img${img.frame && imgEnlarged && "--gif"}`} alt={img.alt} />
+                                <div className="c-project-page__expand-retract" >
+                                    <img src={`/assets/images/${imgEnlarged ? "retract.svg" : "expand.svg"}`} className="c-project-page__expand-retract-img" alt={imgEnlarged ? "retract" : "expand"} />
+                                </div>
                             </div>
-                            <p className="c-project-page__slide-descrp">{img.descrp}</p>
+                            {
+                                !imgEnlarged &&
+                                <p className="c-project-page__slide-descrp">{img.descrp}</p>
+                            }
                         </li>
                     ))}
                 </ul>
