@@ -15,3 +15,31 @@
         transform: scale(1) rotate(0deg);
     }
 }
+
+@keyframes expand {
+    0% {
+        transform: scale(.4);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(.4);
+    }
+}
+
+@keyframes retract {
+    0% {
+        transform: scale(.4);
+    }
+
+    50% {
+        transform: scale(.2);
+    }
+
+    100% {
+        transform: scale(.4);
+    }
+}

@@ -277,7 +277,7 @@ export const PROJECTS = [
             {
                 num: 1,
                 dscrp: 'Space Crash is an infinite runner meets Space Invaders meets Cell Damage that I made in Unity. All the 3D meshes I made in Blender and for the background I used a free asset made by Dogmatic. I created the game out of frustration for this whole corona situation. I just wanted to destroy stuff and was inspired by the feeling of senseless destruction that is also present in a game like Cell Damage or GTA. The spiders in the game represent all the bad thoughts in my brain.',
-                roles: ['Game Design', 'Game Development', '3D Modeling', 'UI Design'],
+                roles: ['Game Design', 'Game Development', '3D Modeling', 'UI Design', 'C# Programmer'],
                 link: 'https://jasve1.itch.io/ultra-sonic-space-crash-3000'
             },
             {

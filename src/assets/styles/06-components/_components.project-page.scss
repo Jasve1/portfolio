@@ -183,6 +183,15 @@
             &:hover {
                 opacity: 1;
             }
+
+            &:hover > &--expand{
+                animation: expand 3s;
+                animation-iteration-count: infinite;
+            }
+            &:hover > &--retract{
+                animation: retract 3s;
+                animation-iteration-count: infinite;
+            }
         }
     }
 

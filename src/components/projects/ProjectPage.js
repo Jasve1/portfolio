@@ -101,7 +101,7 @@ const ProjectPage = ({title, content}) => {
                                 }
                                 <img src={`/assets/images/${img.imgSrcHR}`} className={`c-project-page__img${img.frame && imgEnlarged && "--gif"}`} alt={img.alt} />
                                 <div className="c-project-page__expand-retract" >
-                                    <img src={`/assets/images/${imgEnlarged ? "retract.svg" : "expand.svg"}`} className="c-project-page__expand-retract-img" alt={imgEnlarged ? "retract" : "expand"} />
+                                    <img src={`/assets/images/${imgEnlarged ? "retract.svg" : "expand.svg"}`} className={`c-project-page__expand-retract--${imgEnlarged ? "retract" : "expand"}`} alt={imgEnlarged ? "retract" : "expand"} />
                                 </div>
                             </div>
                             {
