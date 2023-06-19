@@ -7,7 +7,7 @@ export const PROJECTS = [
             {
                 num: 1,
                 dscrp: "This game came out of our thesis project for our education in Games at the IT University of Copenhagen. The game is about exploring the ruins of an ancient civilisation which held power over a magic language. To explore the game the player will have to learn this language and use it to materialise objects in the world.",
-                roles: ['Level Design', 'Environment Art', 'Gameplay and Mechanics Design'],
+                roles: ['Level Design', 'Environment Art', 'Gameplay and Mechanics Design', 'C# Programmer'],
                 collab: ['Lior Maynard', 'Jesper Jeppe Rabjerg', 'Tobias Nielsen'],
                 link: "https://drive.google.com/file/d/1yh9ZBKBvGrEvUtW3ah_WvJ53ChPf1hUI/view?usp=sharing"
             },
