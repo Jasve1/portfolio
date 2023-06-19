@@ -179,6 +179,15 @@
         cursor: pointer;
         transition: ease-in-out 0.2s;
 
+        &--expand {
+            width: 40%;
+            height: 40%;
+        }
+        &--retract {
+            width: 40%;
+            height: 40%;
+        }
+
         @media #{$non-touch} {
             &:hover {
                 opacity: 1;
