@@ -12,13 +12,12 @@ const ProjectPage = ({title, content}) => {
             </header>
             <section className="c-project-page__section">
                 {
-                    content.collab &&
+                    content.info &&
                     <article className="c-project-page__article c-project-page__article--team">
-                        <h4 className="c-project-page__role-header">My Teammates:</h4>
                         <ul className="c-project-page__role-list">
-                            {content.collab.map((teammate) => (
+                            {content.info.map((info) => (
                                 <li className="c-project-page__role-item">
-                                    <p>{teammate}</p>
+                                    <h4 className="c-project-page__info-header">{info.title}:</h4><p>{info.content}</p>
                                 </li>
                             ))}
                         </ul>

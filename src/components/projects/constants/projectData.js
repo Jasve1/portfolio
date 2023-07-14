@@ -8,7 +8,24 @@ export const PROJECTS = [
                 num: 1,
                 dscrp: "This game came out of our thesis project for our education in Games at the IT University of Copenhagen. The game is about exploring the ruins of an ancient civilisation which held power over a magic language. To explore the game the player will have to learn this language and use it to materialise objects in the world.",
                 roles: ['Level Design', 'Environment Art', 'Gameplay and Mechanics Design', 'C# Programmer'],
-                collab: ['Lior Maynard', 'Jesper Jeppe Rabjerg', 'Tobias Nielsen'],
+                info: [
+                    {
+                        title: 'Team Size',
+                        content: '3'
+                    },
+                    {
+                        title: 'Duration',
+                        content: '4 months'
+                    },
+                    {
+                        title: 'Software',
+                        content: 'Unity and Blender'
+                    },
+                    {
+                        title: 'Platform',
+                        content: 'PC'
+                    }
+                ],
                 link: "https://drive.google.com/file/d/1yh9ZBKBvGrEvUtW3ah_WvJ53ChPf1hUI/view?usp=sharing"
             },
             {
@@ -69,7 +86,24 @@ export const PROJECTS = [
                 num: 1,
                 dscrp: 'A game made for the course Game World Design in the Games program at the IT University of Copenhagen. It is a 2 player co-op game where the 2 players has to help each other move forward.',
                 roles: ['Character Design', 'UI Design', 'Environmental Storytelling', 'Evironment Art'],
-                collab: ['Adam Saidane', 'Beatriz Sá', 'Naya Al Tahan', 'Pedro Rainha', 'Tobias Nielsen', 'Zenan Wu'],
+                info: [
+                    {
+                        title: 'Team Size',
+                        content: '6'
+                    },
+                    {
+                        title: 'Duration',
+                        content: '3 months'
+                    },
+                    {
+                        title: 'Software',
+                        content: 'Unity, Blender and Illustrator'
+                    },
+                    {
+                        title: 'Platform',
+                        content: 'PC'
+                    }
+                ],
                 link: 'https://barrythecoolbee.itch.io/the-great-oaks'
             },
             {
@@ -123,7 +157,24 @@ export const PROJECTS = [
                 num: 1,
                 dscrp: 'This was a game made for the course Making Games in the Games program at the IT University of Copenhagen. The game is a take on the tower defense genre where the player is an active agent in defending instead of the classic structure of just waiting for the wave to be over. The theme of the game is inspired by organic gardening with some magic elements where the player has to defend their garden from unwanted pests.',
                 roles: ['QA', 'Art Direction', 'UI Design', 'UX'],
-                collab: ['Lior Maynard', 'Kelsey Lyn Adsitt', 'Jesper Jeppe Rabjerg', 'Alexander Quaade Sørensen', 'Jonas Schartau Gross'],
+                info: [
+                    {
+                        title: 'Team Size',
+                        content: '5'
+                    },
+                    {
+                        title: 'Duration',
+                        content: '2 months'
+                    },
+                    {
+                        title: 'Software',
+                        content: 'Unity, Blender and Illustrator'
+                    },
+                    {
+                        title: 'Platform',
+                        content: 'PC'
+                    }
+                ],
                 link: 'https://drive.google.com/file/d/1xt9z_S5R_25nqbE8_XVJF_Mtanxqo8mV/view?usp=sharing'
             },
             {
