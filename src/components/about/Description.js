@@ -22,9 +22,6 @@ const Description = () => {
 
     return (
         <article className="c-description">
-            <header className="c-description__header">
-                <h2>Jakob Kilias Svenningsen</h2>
-            </header>
             <ul className="c-description__list">
                 {dscrpList.map(item => (
                     <li key={item.title} className="c-description__list-item">

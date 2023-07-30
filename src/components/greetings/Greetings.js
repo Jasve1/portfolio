@@ -13,14 +13,16 @@ const Greetings = () => {
         <section className="c-greetings">
 
             <header className="c-greetings__header">
-                <h1 className="c-greetings__header-name">Jakob Kilias Svenningsen</h1>
-                <h2 className="c-greetings__header-title">Game Design Student</h2>
+                <section className="c-greetings__profile-pic">
+                    <img src="/assets/images/profile_pic_low-res.png" width="300" height="333.66" alt="low resolution me" className={lowResClass} />
+                    <img src="/assets/images/profile_pic.png" width="300" height="333.66" alt="me" onLoad={() => setIsLoading(false)} />
+                </section>
+                <section className="c-greetings__header-text-box">
+                    <h1 className="c-greetings__header-text">Hello there!</h1>
+                    <h1 className="c-greetings__header-text">My name is <mark>Jakob</mark>.</h1>
+                    <h1 className="c-greetings__header-text">Utilizing the awesome powers of <mark>tech</mark> and <mark>design</mark> I realize my passion of designing <mark>curiosity driven gameplay</mark>.</h1>
+                </section>
             </header>
-
-            <section className="c-greetings__profile-pic">
-                <img src="/assets/images/profile_pic_low-res.png" width="300" height="333.66" alt="low resolution me" className={lowResClass} />
-                <img src="/assets/images/profile_pic.png" width="300" height="333.66" alt="me" onLoad={() => setIsLoading(false)} />
-            </section>
 
         </section>
     );

@@ -5,46 +5,40 @@
 .c-greetings {
     width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: $spacing-h-s;
+    margin-top: $spacing-h-m;
 }
 
-$header-size: 25rem;
 .c-greetings__header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: $padding-s;
-    box-sizing: border-box;
-    text-align: center;
-    background-image: url('../../images/header_bg.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    width: $header-size;
-    height: calc(#{$header-size} * 0.24);
+    width: 90%;
+    margin: auto;
+    margin-bottom: $spacing-h-s;
+
+    @media #{$tablet-large} {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 
-.c-greetings__header-name {
-    font-size: calc(#{$header-size} * 0.05);
-    margin-top: 4%;
-    margin-bottom: 7%;
+.c-greetings__header-text-box{
+    width: 60%;
+
+    @media #{$tablet-large} {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.c-greetings__header-title {
-    font-size: calc(#{$header-size} * 0.03);
+.c-greetings__header-text {
+    font-size: $h1-size;
+    margin-bottom: 5%;
 }
 
 .c-greetings__profile-pic {
-    margin-top: $spacing-h-s;
-    width: $width_box-s;
-    min-height: calc(#{$width_box-s} * 1.09);
-    margin-bottom: $padding-m;
     position: relative;
+    width: 35%;
+    margin-right: 5%;
 
     &--low-res {
         position: absolute;
@@ -53,9 +47,9 @@ $header-size: 25rem;
         filter: blur(5px);
     }
 
-    @media #{$mobile} {
-        width: $width_box-xs;
-        min-height: calc(#{$width_box-xs} * 1.09);
+    @media #{$tablet-large} {
+        margin-right: 0;
+        margin-bottom: 5%;
     }
 }
 

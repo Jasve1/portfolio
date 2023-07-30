@@ -74,16 +74,17 @@
 
 .c-project__content {
     width: $res-width_box-xxl;
-    height: calc(#{$res-width_box-xxl} * 0.54);
+    height: calc(#{$res-width_box-xxl} * 0.56);
     min-width: $width_box-xxl;
-    min-height: calc(#{$width_box-xxl} * 0.54);
+    min-height: calc(#{$width_box-xxl} * 0.56);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-image: url('../../images/fantasy_theme_projects_bg.svg');
     box-sizing: border-box;
     display: flex;
-    padding: 4% 7% 3%;
+    justify-content: center;
+    align-items: center;
     transition: ease-in-out 0.2s;
 
     &--project1 {
@@ -109,12 +110,8 @@
         min-height: unset;
         flex: none;
 
-        &--left {
+        &--single {
             margin-right: -100vw;
-        }
-
-        &--right {
-            margin-right: 100vw;
         }
     }
 
@@ -122,12 +119,8 @@
         width: 200vw;
         height: calc(200vw * 0.54);
 
-        &--left {
+        &--single {
             margin-right: -100vw;
-        }
-
-        &--right {
-            margin-right: 100vw;
         }
     }
 
@@ -139,14 +132,14 @@
 }
 
 .c-project__slider {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .c-project__arrows {
-    position: relative;
+    position: fixed;
     height: $height_elm-s;
     display: flex;
     width: 70vw;
@@ -156,18 +149,16 @@
     border: $thick-border $dark-color;
     border-radius: 100px;
     align-items: center;
-    bottom: $spacing-h-xl;
-
-    @media #{$desktop-only} {
-        display: none;
-    }
+    bottom: $spacing-h-xs;
+    left: 15vw;
+    z-index: 2;
 
     @media #{$tablet-small} {
         bottom: $spacing-h-l;
     }
 
     @media #{$mobile} {
-        bottom: 0;
+        bottom: $spacing-h-s;
     }
 }
 

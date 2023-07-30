@@ -16,7 +16,7 @@ const Traits = () => {
         },
         {
             title: "Flaws",
-            content: "I need to feel like I am doing something meaningful to stay motivated."
+            content: "I simply care too much (might not be a flaw but I wasn't going to write anything that would make me look bad)."
         }
     ];
 

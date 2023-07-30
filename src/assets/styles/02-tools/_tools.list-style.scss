@@ -9,12 +9,13 @@
     &:before {
         content: "";
         background-image: url('../../images/sword_bulletpoint.svg');
-        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
         display: flex;
-        align-items: center;
-        width: $h2-size;
-        height: 0.8rem;
-        margin-right: $padding-xs;
-        flex: none;
+        align-items: flex-start;
+        width: $height_elm-s;
+        margin-right: 0.5rem;
+        flex: none;    
     }
 }

@@ -27,17 +27,18 @@
 }
 
 /** FONT-FAMILY **/
-$h1-family: "Source Sans Pro Black", "sans-serif";
-$h2-family: "Source Sans Pro Bold", "sans-serif";
-$h3-family: "Source Sans Pro Black", "sans-serif";
+$highlight-family: "Source Sans Pro Black", "sans-serif";
+$h1-family: "Source Sans Pro Bold", "sans-serif";
+$h2-family: "Source Sans Pro Black", "sans-serif";
+$h3-family: "Source Sans Pro bold", "sans-serif";
 $h4-family: "Source Sans Pro SemiBold", "sans-serif";
 $btn-font-family: "Source Sans Pro Bold", "sans-serif";
 $p-family: "Source Sans Pro Regular", "sans-serif";
 
 /** FONT-SIZE **/
 $global-size: 16px;
-$h1-size: 3rem;
-$h2-size: 2rem;
+$h1-size: 2rem;
+$h2-size: 1.7rem;
 $h3-size: 1.5rem;
 $h4-size: 0.7rem;
 $h5-size: 0.5rem;

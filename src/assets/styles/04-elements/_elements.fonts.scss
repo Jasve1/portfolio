@@ -6,8 +6,16 @@ html {
     font-size: $global-size;
     color: $dark-color;
 
-    @media #{$tablet-small} {
+    @media #{$desktop-small} {
         font-size: 14px;
+    }
+
+    @media #{$tablet-large} {
+        font-size: $global-size;
+    }
+
+    @media #{$tablet-small} {
+        font-size: 12px;
     }
 
     @media #{$mobile} {
@@ -17,6 +25,12 @@ html {
     @media #{$big-screen-only} {
         font-size: 20px;
     }
+}
+
+mark {
+    font-family: $highlight-family;
+    color: $theme-color-second;
+    background: none;
 }
 
 h1 {

@@ -6,24 +6,31 @@ export const PROJECTS = [
         pages: [
             {
                 num: 1,
-                dscrp: "This game came out of our thesis project for our education in Games at the IT University of Copenhagen. The game is about exploring the ruins of an ancient civilisation which held power over a magic language. To explore the game the player will have to learn this language and use it to materialise objects in the world.",
-                roles: ['Level Design', 'Environment Art', 'Gameplay and Mechanics Design', 'C# Programmer'],
+                title: 'Tapestry',
+                article: {
+                    header: 'Overview',
+                    text: 'This game came out of our thesis project for our education in Games at the IT University of Copenhagen. The game is about exploring the ruins of an ancient civilisation which held power over a magic language. To explore the game the player will have to learn this language and use it to materialise objects in the world',
+                },
                 info: [
                     {
                         title: 'Team Size',
-                        content: '3'
+                        text: '3'
+                    },
+                    {
+                        title: 'Roles',
+                        text: 'Level Design, Gameplay Design, Evironment Art, C# Programmer'
                     },
                     {
                         title: 'Duration',
-                        content: '4 months'
+                        text: '4 months'
                     },
                     {
                         title: 'Software',
-                        content: 'Unity and Blender'
+                        text: 'Unity and Blender'
                     },
                     {
                         title: 'Platform',
-                        content: 'PC'
+                        text: 'PC'
                     }
                 ],
                 link: "https://drive.google.com/file/d/1yh9ZBKBvGrEvUtW3ah_WvJ53ChPf1hUI/view?usp=sharing"
@@ -84,24 +91,31 @@ export const PROJECTS = [
         pages: [
             {
                 num: 1,
-                dscrp: 'A game made for the course Game World Design in the Games program at the IT University of Copenhagen. It is a 2 player co-op game where the 2 players has to help each other move forward.',
-                roles: ['Character Design', 'UI Design', 'Environmental Storytelling', 'Evironment Art'],
+                title: 'The Great Oaks',
+                article: {
+                    header: 'Overview',
+                    text: 'A game made for the course Game World Design in the Games program at the IT University of Copenhagen. It is a 2 player co-op game where the 2 players has to help each other move forward.'
+                },
                 info: [
                     {
                         title: 'Team Size',
-                        content: '6'
+                        text: '6'
+                    },
+                    {
+                        title: 'Roles',
+                        text: 'UI Design, Character Design, Evironment Art'
                     },
                     {
                         title: 'Duration',
-                        content: '3 months'
+                        text: '3 months'
                     },
                     {
                         title: 'Software',
-                        content: 'Unity, Blender and Illustrator'
+                        text: 'Unity, Blender and Illustrator'
                     },
                     {
                         title: 'Platform',
-                        content: 'PC'
+                        text: 'PC'
                     }
                 ],
                 link: 'https://barrythecoolbee.itch.io/the-great-oaks'
@@ -155,24 +169,31 @@ export const PROJECTS = [
         pages: [
             {
                 num: 1,
-                dscrp: 'This was a game made for the course Making Games in the Games program at the IT University of Copenhagen. The game is a take on the tower defense genre where the player is an active agent in defending instead of the classic structure of just waiting for the wave to be over. The theme of the game is inspired by organic gardening with some magic elements where the player has to defend their garden from unwanted pests.',
-                roles: ['QA', 'Art Direction', 'UI Design', 'UX'],
+                title: 'The Guardener',
+                article: {
+                    header: 'Overview',
+                    text: 'This was a game made for the course Making Games in the Games program at the IT University of Copenhagen. The game is a take on the tower defense genre where the player is an active agent in defending instead of the classic structure of just waiting for the wave to be over. The theme of the game is inspired by organic gardening with some magic elements where the player has to defend their garden from unwanted pests.'
+                },
                 info: [
                     {
                         title: 'Team Size',
-                        content: '5'
+                        text: '5'
+                    },
+                    {
+                        title: 'Roles',
+                        text: 'UI Design, UX, QA, Art Direction'
                     },
                     {
                         title: 'Duration',
-                        content: '2 months'
+                        text: '2 months'
                     },
                     {
                         title: 'Software',
-                        content: 'Unity, Blender and Illustrator'
+                        text: 'Unity, Blender and Illustrator'
                     },
                     {
                         title: 'Platform',
-                        content: 'PC'
+                        text: 'PC'
                     }
                 ],
                 link: 'https://drive.google.com/file/d/1xt9z_S5R_25nqbE8_XVJF_Mtanxqo8mV/view?usp=sharing'

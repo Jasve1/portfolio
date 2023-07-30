@@ -3,51 +3,106 @@
 ===================================================*/
 
 .c-project-page {
-    width: 40%;
+    width: 38%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    padding: 0% 6% 0% 4%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    perspective: 600px;
+    transition: ease-in-out 2s;
+    transform-style: preserve-3d;
 
     @media #{$tablet-large} {
         width: 35%;
     }
 
-    h4 {
-        font-size: 1.1rem;
+    h3 {
+        font-size: 1.3rem;
     }
 
-    &--left {
-        padding: 0 7% 0 3%;
-        align-self: start;
+    &__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
 
-        @media #{$tablet-large} {
-            padding: 4% 7% 0 8%;
+        &--loaded {
+            animation: easeIn 1s;
+            opacity: 1;
         }
     }
 
-    &--right {
-        padding: 0 3% 0 7%;
-        align-self: end;
-        justify-content: center;
-        align-items: center;
+    &__left {
+        align-self: start;
+        background-image: url('../../images/fantasy_theme_left_page_bg.svg');
+        
+        &--turn-page{
+            transform-origin: right;
+            transform: rotateY(0deg);
+            animation: turnPage .7s;
+            z-index: 1;
+        }
 
         @media #{$tablet-large} {
-            padding: 0px 8% 0 7%;
+            padding: 0% 5.7% 0 5.7%;
+        }
+    }
+
+    &__right {
+        align-self: end;
+        background-image: url('../../images/fantasy_theme_right_page_bg.svg');
+
+        &--turn-page {
+            transform-origin: left;
+            transform: rotateY(0deg);
+            animation: turnPage .7s;
+            z-index: 1;
+        }
+
+        @media #{$tablet-large} {
+            padding: 0% 5.7% 0 5.7%;
+        }
+    }
+
+    &__first-page {
+        background: none;
+    }
+
+    &__single-page {
+        margin-right: 48%;
+        align-self: start;
+        background-image: url('../../images/fantasy_theme_left_page_bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transform-origin: right;
+
+        &--turn-right{
+            transform: rotateY(0deg);
+            animation: turnPage .7s;
+            z-index: 1;
+        }
+
+        &--turn-left{
+            transform: rotateY(0deg);
+            animation: turnPageReverse .7s;
+            z-index: 1;
+        }
+
+        @media #{$tablet-large} {
+            margin-right: 46%;
         }
     }
 
     &__header {
         width: 100%;
-        height: 10%;
         display: flex;
         justify-content: center;
         margin-bottom: 5%;
-    }
-
-    &__info-header {
-        font-size: 1rem;
-        margin-right: 3%;
-        margin-bottom: 8%;
     }
 
     &__section {
@@ -56,7 +111,8 @@
     }
 
     &__article {
-        margin-bottom: 2.5%;
+        margin-bottom: 4%;
+        width: 80%;
 
         &--team {
             width: 65%;
@@ -64,13 +120,18 @@
         }
     }
 
-    &__role-header {
-        margin-bottom: 6%;
+    &__list {
+        width: 80%;
     }
 
-    &__role-item {
+    &__list-item {
         @include sword;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
+    }
+
+    &__item-header {
+        font-size: 1rem;
+        margin-right: 2%;
     }
 
     &__slider-wrap{
@@ -85,11 +146,25 @@
             overflow: hidden;
             position: fixed;
             top: 2vh;
-            left: 20vw;
 
             @media #{$tablet-small} {
                 width: 90vw;
-                left: 5vw;
+            }
+
+            &--right {
+                right: 20vw;
+
+                @media #{$tablet-small} {
+                    right: 5vw;
+                }
+            }
+
+            &--left {
+                left: 20vw;
+
+                @media #{$tablet-small} {
+                    left: 5vw;
+                }
             }
         }
 
@@ -217,6 +292,7 @@
     }
 
     &__link {
+        display: none;
         width: 45px;
         margin-top: 4%;
         transition: ease-in-out 0.2s;
@@ -224,12 +300,8 @@
             transform: scale(1.2);
         }
 
-        @media #{$non-touch} {
-            &:hover {
-                .c-project-page__msg {
-                    transform:scale(1) translate(0, 50px);
-                }
-            }    
+        @media #{$desktop-only} {
+            display: block;   
         }
     }
 
