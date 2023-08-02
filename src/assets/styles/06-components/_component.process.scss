@@ -9,8 +9,8 @@
     align-items: center;
     margin-top: $spacing-h-l;
 
-    @media #{$mobile} {
-        margin-top: $spacing-h-s;
+    @media #{$touch-only} {
+        display: none;
     }
 
     &__article {
