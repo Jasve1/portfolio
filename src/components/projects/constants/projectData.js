@@ -14,7 +14,7 @@ export const PROJECTS = [
                 info: [
                     {
                         title: 'Team Size',
-                        text: '3'
+                        text: '4'
                     },
                     {
                         title: 'Roles',
