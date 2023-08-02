@@ -257,6 +257,28 @@ export const PROJECTS = [
                         descrp: 'The visual style of the UI needed to be simplistic as the structure of the UI could quickly get complex in this game but it also needed to convey some of the magical mood of the game.'
                     }
                 ]
+            },
+            {
+                num: 3,
+                article: {
+                    header: 'Overview',
+                    text: 'This was a game made for the course Making Games in the Games program at the IT University of Copenhagen. The game is a take on the tower defense genre where the player is an active agent in defending instead of the classic structure of just waiting for the wave to be over. The theme of the game is inspired by organic gardening with some magic elements where the player has to defend their garden from unwanted pests.'
+                },
+                gallery: [
+                    {
+                        imgSrcHR: 'TheGuardenerPlacingCoffee.gif',
+                        imgSrcLR: '',
+                        frame: 'gif_frame.png',
+                        alt: 'Strategy Mode'
+                    },
+                ]
+            },
+            {
+                num: 4,
+            }
+            ,
+            {
+                num: 5,
             }
         ]
     }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
+import Process from './Process';
 
 const Greetings = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,8 @@ const Greetings = () => {
                     <h1 className="c-greetings__header-text">Utilizing the awesome powers of <mark>tech</mark> and <mark>design</mark> I realize my passion of designing <mark>curiosity driven gameplay</mark>.</h1>
                 </section>
             </header>
+
+            <Process />
 
         </section>
     );

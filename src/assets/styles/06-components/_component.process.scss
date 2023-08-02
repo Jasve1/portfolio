@@ -1,0 +1,111 @@
+/*==================================================
+    06-COMPONENTS/PROCESS
+===================================================*/
+
+.c-process {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $spacing-h-l;
+
+    @media #{$mobile} {
+        margin-top: $spacing-h-s;
+    }
+
+    &__article {
+        width: $width_box-m;
+        height: calc(#{$width_box-m} * 1.11);
+        margin-right: $spacing-w-s;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url('../../images/fantasy_theme_ability-bg.svg');
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media #{$mobile} {
+            width: 100%;
+            height: calc(70vw * 1.11);
+        }
+
+        @media #{$big-screen-only} {
+            height: calc(#{$width_box-l} * 1.11);
+            width: $width_box-l;
+        }
+    }
+
+    &__header {
+        @include profile-header;
+        margin-bottom: $spacing-h-s;
+    }
+
+    &__text {
+        padding: $padding-l $padding-xxl;
+        box-sizing: border-box;
+    }
+
+    &__visuals {
+        position: relative;
+        width: 500px;
+        height: calc(500px * 0.8);
+
+        @media #{$mobile} {
+            width: 300px;
+            height: calc(300px * 0.8);
+        }
+    }
+
+    &__item {
+        height: auto;
+        position: absolute;
+        transform: scale(1);
+        transition: ease-in-out 0.2s;
+
+        @media #{$non-touch} {
+            &:hover {
+                z-index: 1;
+                transform: scale(1.1);
+            }
+
+            &:hover .c-infobox {
+                display: flex;
+                transform: scale(1);
+                animation-name: popUp;
+                animation-duration: 0.2s;
+            }    
+        }
+
+        &--research {
+            width: 33%;
+            top: 0;
+            left: 32%;
+        }
+
+        &--ideation {
+            width: 27%;
+            top: 17%;
+            left: 73%;
+        }
+
+        &--prototyping {
+            width: 20%;
+            top: 70%;
+            left: 65%;
+        }
+
+        &--testing {
+            width: 34%;
+            top: 68%;
+            left: 18%;
+        }
+
+        &--analyzing-feedback {
+            width: 32%;
+            top: 26%;
+            left: 0%;
+        }
+    }
+}

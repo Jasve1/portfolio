@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import parse from 'html-react-parser';
 
 const Infobox = ({data, list, view, show}) => {
     const infoClass = classnames(`c-infobox c-infobox--${view}`, {
@@ -13,10 +14,10 @@ const Infobox = ({data, list, view, show}) => {
             </header>
             <section className="c-infobox__content">
                 <div className="c-infobox__img">
-                    <img src={`/assets/images/fantasy_theme_${data.img}.svg`} alt={data.title} />
+                    <img src={`/assets/images/${data.img}.svg`} alt={data.title} />
                 </div>
                 <section className="c-infobox__text">
-                    <p>{data.descrp}</p>
+                    <p>{parse(data.descrp)}</p>
                     {list ? 
                         <ul className="c-infobox__list">
                             {list.map(item => (
