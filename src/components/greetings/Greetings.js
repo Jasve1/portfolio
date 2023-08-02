@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
-import Process from './Process';
+import Process from './process/Process';
 
 const Greetings = () => {
     const [isLoading, setIsLoading] = useState(true);
