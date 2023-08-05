@@ -18,7 +18,7 @@ const Badge = ({badge}) => {
                     <img src="/assets/images/fantasy_theme_default-badge.svg" alt="Badge icon placeholder" />
                 </div>
                 <div className="c-badge__icon">
-                    <img src={`/assets/images/fantasy_theme_${badge.img}.svg`} alt={badge.title} />
+                    <img src={`/assets/images/${badge.img}.svg`} alt={badge.title} />
                 </div>
             </section>
             <Infobox data={badge} view="bottom-left" show={showInfo} />
